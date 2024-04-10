@@ -34,10 +34,10 @@ const config: Config = {
           editUrl: 'https://github.com/Kwasow/binary',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/index.css',
         },
       } satisfies Preset.Options,
     ],
@@ -60,8 +60,9 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Kwasow/binary',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
