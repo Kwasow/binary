@@ -59,8 +59,6 @@ export default function NavbarContent() {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
 
-  console.log(leftItems, rightItems)
-
   return (
     <NavbarContentLayout
       left={
