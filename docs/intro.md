@@ -12,6 +12,16 @@ Get started by **creating a new site**.
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
+```kotlin
+fun letsDoIt(test: Int): String {
+  if (test >= 0) {
+    return "Hello, Docusaurus!"
+  }
+
+  return "$test is less than zero"
+}
+```
+
 ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
