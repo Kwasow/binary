@@ -58,7 +58,9 @@ export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
-  const searchBarItem = items.find((item) => item.type === 'search');
+
+  console.log(leftItems, rightItems)
+
   return (
     <NavbarContentLayout
       left={
@@ -67,14 +69,14 @@ export default function NavbarContent() {
             <NavbarLogo />
           </div>
           <NavbarItems items={leftItems} />
-          {!isMobile && (
-            <NavbarColorModeToggle className={styles.colorModeToggle} />
-          )}
         </>
       }
       right={
         <>
           <NavbarItems items={rightItems} />
+          {!isMobile && (
+            <NavbarColorModeToggle className={styles.colorModeToggle} />
+          )}
           {!mobileSidebar.disabled && (
             <NavbarMobileSidebarToggle />
           )}

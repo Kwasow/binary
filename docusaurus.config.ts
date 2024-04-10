@@ -2,6 +2,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import lightCodeTheme from './src/theme/CodeBlock/highlighting-light.js';
 import darkCodeTheme from './src/theme/CodeBlock/highlighting-dark.js';
+import { PrismTheme } from 'prism-react-renderer';
 
 const siteName = 'Matura z Informatyki'
 
@@ -73,8 +74,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Karol Wąsowski, Built with Docusaurus.`,
     },
     prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme
+      theme: lightCodeTheme as PrismTheme,
+      darkTheme: darkCodeTheme as PrismTheme
     },
   } satisfies Preset.ThemeConfig,
 };
