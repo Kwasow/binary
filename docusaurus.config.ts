@@ -36,9 +36,7 @@ const config: Config = {
           sidebarCollapsible: false,
           editUrl: 'https://github.com/Kwasow/binary',
         },
-        blog: {
-          showReadingTime: false,
-        },
+        blog: false,
         theme: {
           customCss: './src/css/index.css',
         },
@@ -61,7 +59,6 @@ const config: Config = {
           position: 'left',
           label: 'Materiały',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Kwasow/binary',
           position: 'right',

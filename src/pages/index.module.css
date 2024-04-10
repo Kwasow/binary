@@ -10,8 +10,34 @@
   overflow: hidden;
 }
 
+.heroTitle {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+}
+
+.landingContainer {
+  margin: 1rem auto;
+  width: 60%;
+}
+
+@media (max-width: 1440px) {
+  .landingContainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingContainer {
+    width: 80%;
   }
 }
