@@ -6,7 +6,7 @@ const siteName = 'Matura z Informatyki'
 
 const config: Config = {
   title: siteName,
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Jak zdać i dostać się na studia',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
