@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import HomepageContent from './index.md'
 
 import styles from './index.module.css';
 
@@ -18,6 +17,14 @@ function HomepageHeader() {
       </div>
     </header>
   );
+}
+
+function HomepageContent() {
+  return (
+    <Heading as="h1">
+      Cześć!
+    </Heading>
+  )
 }
 
 export default function Home(): JSX.Element {

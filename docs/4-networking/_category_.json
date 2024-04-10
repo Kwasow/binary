@@ -1,0 +1,8 @@
+{
+  "label": "Sieci komputerowe",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Budowa i komunikacja w sieci"
+  }
+}

@@ -1,5 +1,0 @@
----
-title: Home Page
----
-
-# Cześć!
