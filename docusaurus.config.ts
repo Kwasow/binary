@@ -32,6 +32,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsible: false,
           editUrl: 'https://github.com/Kwasow/binary',
         },
         blog: {
