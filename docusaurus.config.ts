@@ -52,6 +52,7 @@ const config: Config = {
       logo: {
         alt: `Logo serwisu ${siteName}`,
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg'
       },
       items: [
         {
