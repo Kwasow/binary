@@ -8,6 +8,7 @@ import HomepageButton from '@site/src/components/HomepageButton';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -15,7 +16,6 @@ function HomepageHeader() {
           {siteConfig.title}
         </p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <HomepageButton title='Start' href='/matura/docs/category/wstep'/>
       </div>
     </header>
   );
@@ -24,9 +24,14 @@ function HomepageHeader() {
 function HomepageContent() {
   return (
     <div className={clsx(styles.landingContainer)}>
-      <Heading as="h1">
-        Cześć!
-      </Heading>
+      <div className={clsx(styles.headingContainer)}>
+        <Heading as="h1">
+          Cześć!
+        </Heading>
+
+        <HomepageButton title='Start' href='http://localhost:3000/matura/docs/intro/intro'/>
+      </div>
+      
       <br/>
       <p>
         Nazywam się Karol Wąsowski i jestem studentem informatyki na wydziale

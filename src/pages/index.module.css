@@ -28,6 +28,13 @@
   text-align: center;
 }
 
+.headingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 1rem;

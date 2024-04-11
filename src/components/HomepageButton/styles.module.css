@@ -22,13 +22,6 @@ a.homepageButtonLink:hover {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .homepageButton,
-  .homepageButtonLink {
-    width: 100%;
-  }
-}
-
 .homepageButton p {
   margin: 0 0 2px 0;
 }
