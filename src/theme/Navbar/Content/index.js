@@ -12,8 +12,10 @@ import NavbarItem from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
-import styles from './styles.module.css';
 import clsx from 'clsx';
+import usePageType from '@site/src/hooks/usePageType'
+
+import styles from './styles.module.css';
 
 function useNavbarItems() {
   return useThemeConfig().navbar.items;
@@ -55,6 +57,7 @@ export default function NavbarContent() {
   const windowSize = useWindowSize();
   const isMobile = windowSize === 'mobile';
 
+  const { isLanding } = usePageType();
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
@@ -66,16 +69,16 @@ export default function NavbarContent() {
           <div className={styles.logoWrapper}>
             <NavbarLogo />
           </div>
-          <NavbarItems items={leftItems} />
+          {!isLanding && <NavbarItems items={leftItems} />}
         </>
       }
       right={
         <>
-          <NavbarItems items={rightItems} />
-          {!isMobile && (
+          {(!isMobile || isLanding) && 
             <NavbarColorModeToggle className={styles.colorModeToggle} />
-          )}
-          {!mobileSidebar.disabled && (
+          }
+          <NavbarItems items={rightItems} />
+          {!mobileSidebar.disabled && !isLanding && (
             <NavbarMobileSidebarToggle />
           )}
         </>
