@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import HomepageButton from '../components/HomepageButton';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -14,6 +15,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <HomepageButton title='Start' href='/matura/docs/category/wstep'/>
       </div>
     </header>
   );
