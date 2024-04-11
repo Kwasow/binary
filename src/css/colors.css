@@ -237,6 +237,8 @@
 
   --swm-landing-sponsors-color: var(--ifm-font-color-base);
 
+  --binary-landing-hero-background: var(--swm-navy-light-100);
+
   /* Cards */
   --swm-card-background: var(--swm-background);
   --swm-card-border: var(--swm-navy-light-20);
@@ -401,6 +403,8 @@
   --swm-landing-feature-item-shadow: var(--swm-purple-dark-140);
 
   --swm-landing-sponsors-color: var(--swm-off-white);
+
+  --binary-landing-hero-background: rgb(48, 56, 70);
 
   /* Cards */
   --swm-card-background: var(--swm-navy);

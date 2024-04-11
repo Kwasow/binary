@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--binary-landing-hero-background);
+  color: white;
 }
 
 .heroTitle {

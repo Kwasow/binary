@@ -43,8 +43,8 @@ function HomepageContent() {
       </p>
 
       <p>
-        Zarówno przygotowując się do matury, jak i teraz przygotowując się do
-        zajęć, zauważyłem, że brakuje materiałów, który w przystępny sposób
+        Zarówno przygotowując się do matury, jak i teraz szykując zajęcia,
+        zauważyłem, że brakuje materiałów, który w przystępny sposób
         tłumaczą cały materiał wymagany na maturze (wszyscy chyba dobrze wiemy,
         jak bardzo pomocny bywa słynny Matemaks). Na tej stronie znajdziesz
         informacje o moich doświadczeniach związanych z maturą, a także
