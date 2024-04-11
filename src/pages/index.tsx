@@ -1,43 +1,91 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import HomepageButton from '@site/src/components/HomepageButton';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1">
+        <p className={clsx('hero__title', styles.heroTitle)}>
           {siteConfig.title}
-        </Heading>
+        </p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
       </div>
     </header>
   );
+}
+
+function HomepageContent() {
+  return (
+    <div className={clsx(styles.landingContainer)}>
+      <div className={clsx(styles.headingContainer)}>
+        <Heading as="h1">
+          Cześć!
+        </Heading>
+
+        <HomepageButton title='Start' href='http://localhost:3000/matura/docs/intro/intro'/>
+      </div>
+      
+      <br/>
+      <p>
+        Nazywam się Karol Wąsowski i jestem studentem informatyki na wydziale
+        Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego, a od
+        2024 roku zajmuję się również nauczaniem informatyki w Społecznym
+        Liceum Ogólnokształcący "Startowa 4K" w Warszawie. Maturę (w tym z
+        informatyki) zdawałem w 2021 roku w II Liceum Ogólnokształcącym im.
+        Stefana Batorego w Warszawie.
+      </p>
+
+      <p>
+        Zarówno przygotowując się do matury, jak i teraz szykując zajęcia,
+        zauważyłem, że brakuje materiałów, który w przystępny sposób
+        tłumaczą cały materiał wymagany na maturze (wszyscy chyba dobrze wiemy,
+        jak bardzo pomocny bywa słynny Matemaks). Na tej stronie znajdziesz
+        informacje o moich doświadczeniach związanych z maturą, a także
+        materiały pomocne w przygotowaniach do egzaminu, ale nie tylko. Znajdują
+        się tu także tematy dodatkowe, które nie są wymagane na maturze, ale
+        zainteresowały mnie albo moich uczniów.
+      </p>
+
+      <p>
+        Zachęcam każdego, nie tylko osoby planujące zdawać Informatykę na
+        maturze, kto chciałby nauczyć się programować, obsługiwać bazy danych,
+        albo dowiedzieć się czegoś o działaniu komputerów i sieci komputerowych.
+        Informatyka nie jest trudna, a sposób myślenia, który rozwija się
+        podczas jej nauki, przydaje się w bardzo wielu dziedzinach życia.
+      </p>
+
+      <p>
+        Powodzenia!
+      </p>
+
+      <img
+        src="/matura/img/karol-wasowski.jpg"
+        alt="Karol Wąsowski"
+        className={clsx(styles.landingProfileImage)} />
+      
+      <p className={clsx(styles.landingProfileImageSubtext)}>
+        <b>Karol Wąsowski</b><br/>
+        (Kwasow)
+      </p>
+    </div>
+  )
 }
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description={siteConfig.tagline}>
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <HomepageContent />
     </Layout>
   );
 }

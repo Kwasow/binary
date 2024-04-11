@@ -8,16 +8,58 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--binary-landing-hero-background);
+  color: white;
+}
+
+.heroTitle {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.landingProfileImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.landingProfileImageSubtext {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.landingContainer {
+  margin: 1rem auto;
+  width: 60%;
+}
+
+@media (max-width: 1440px) {
+  .landingContainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingContainer {
+    width: 80%;
+  }
 }

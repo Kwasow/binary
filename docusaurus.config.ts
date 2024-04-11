@@ -1,12 +1,14 @@
-import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import lightCodeTheme from './src/theme/CodeBlock/highlighting-light.js';
+import darkCodeTheme from './src/theme/CodeBlock/highlighting-dark.js';
+import { PrismTheme } from 'prism-react-renderer';
 
 const siteName = 'Matura z Informatyki'
 
 const config: Config = {
   title: siteName,
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Jak zdać i dostać się na studia',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -31,11 +33,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsible: false,
           editUrl: 'https://github.com/Kwasow/binary',
         },
-        blog: {
-          showReadingTime: false,
-        },
+        blog: false,
         theme: {
           customCss: './src/css/index.css',
         },
@@ -49,6 +50,7 @@ const config: Config = {
       logo: {
         alt: `Logo serwisu ${siteName}`,
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg'
       },
       items: [
         {
@@ -57,7 +59,6 @@ const config: Config = {
           position: 'left',
           label: 'Materiały',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Kwasow/binary',
           position: 'right',
@@ -71,8 +72,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Karol Wąsowski, Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: lightCodeTheme as PrismTheme,
+      darkTheme: darkCodeTheme as PrismTheme
     },
   } satisfies Preset.ThemeConfig,
 };
