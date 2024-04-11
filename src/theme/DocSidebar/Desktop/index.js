@@ -5,6 +5,7 @@ import Logo from '@theme/Logo';
 import CollapseButton from '@theme/DocSidebar/Desktop/CollapseButton';
 import Content from '@theme/DocSidebar/Desktop/Content';
 import styles from './styles.module.css';
+
 function DocSidebarDesktop({ path, sidebar, onCollapse, isHidden }) {
   const {
     navbar: { hideOnScroll },
@@ -25,4 +26,5 @@ function DocSidebarDesktop({ path, sidebar, onCollapse, isHidden }) {
     </div>
   );
 }
+
 export default React.memo(DocSidebarDesktop);

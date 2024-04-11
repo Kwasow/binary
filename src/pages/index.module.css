@@ -15,6 +15,19 @@
   margin-bottom: 0;
 }
 
+.landingProfileImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.landingProfileImageSubtext {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 1rem;

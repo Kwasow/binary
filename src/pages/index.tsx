@@ -27,7 +27,45 @@ function HomepageContent() {
       </Heading>
       <br/>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie malesuada nulla. Morbi nec luctus orci. Aenean congue vel nunc id vestibulum. In mattis semper metus in dictum. Sed tristique enim eget ipsum porta varius. Sed lectus eros, lacinia eget dignissim vitae, congue quis lectus. Maecenas sit amet bibendum arcu, vel vehicula lorem. Praesent ac erat sollicitudin, sollicitudin nulla gravida, rutrum lectus. Duis hendrerit aliquam lacinia. Cras sodales turpis a lacus accumsan, eu volutpat nunc consectetur.
+        Nazywam się Karol Wąsowski i jestem studentem informatyki na wydziale
+        Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego, a od
+        2024 roku zajmuję się również nauczaniem informatyki w Społecznym
+        Liceum Ogólnokształcący "Startowa 4K" w Warszawie. Maturę (w tym z
+        informatyki) zdawałem w 2021 roku w II Liceum Ogólnokształcącym im.
+        Stefana Batorego w Warszawie.
+      </p>
+
+      <p>
+        Zarówno przygotowując się do matury, jak i teraz przygotowując się do
+        zajęć, zauważyłem, że brakuje materiałów, który w przystępny sposób
+        tłumaczą cały materiał wymagany na maturze (wszyscy chyba dobrze wiemy,
+        jak bardzo pomocny bywa słynny Matemaks). Na tej stronie znajdziesz
+        informacje o moich doświadczeniach związanych z maturą, a także
+        materiały pomocne w przygotowaniach do egzaminu, ale nie tylko. Znajdują
+        się tu także tematy dodatkowe, które nie są wymagane na maturze, ale
+        zainteresowały mnie albo moich uczniów.
+      </p>
+
+      <p>
+        Zachęcam każdego, nie tylko osoby planujące zdawać Informatykę na
+        maturze, kto chciałby nauczyć się programować, obsługiwać bazy danych,
+        albo dowiedzieć się czegoś o działaniu komputerów i sieci komputerowych.
+        Informatyka nie jest trudna, a sposób myślenia, który rozwija się
+        podczas jej nauki, przydaje się w bardzo wielu dziedzinach życia.
+      </p>
+
+      <p>
+        Powodzenia!
+      </p>
+
+      <img
+        src="/matura/img/karol-wasowski.jpg"
+        alt="Karol Wąsowski"
+        className={clsx(styles.landingProfileImage)} />
+      
+      <p className={clsx(styles.landingProfileImageSubtext)}>
+        <b>Karol Wąsowski</b><br/>
+        (Kwasow)
       </p>
     </div>
   )

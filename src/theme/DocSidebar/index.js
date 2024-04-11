@@ -12,6 +12,7 @@ export default function DocSidebar(props) {
     windowSize === 'desktop' || windowSize === 'ssr';
   // Mobile sidebar not visible on hydration: can avoid SSR rendering
   const shouldRenderSidebarMobile = windowSize === 'mobile';
+
   return (
     <>
       {shouldRenderSidebarDesktop && <DocSidebarDesktop {...props} />}

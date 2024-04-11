@@ -12,6 +12,7 @@ import './styles.module.css'
 // eslint-disable-next-line react/function-component-definition
 const DocSidebarMobileSecondaryMenu = ({ sidebar, path }) => {
   const mobileSidebar = useNavbarMobileSidebar();
+
   return (
     <ul className={clsx(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>
       <DocSidebarItems
@@ -28,6 +29,7 @@ const DocSidebarMobileSecondaryMenu = ({ sidebar, path }) => {
     </ul>
   );
 };
+
 function DocSidebarMobile(props) {
   return (
     <NavbarSecondaryMenuFiller
@@ -36,4 +38,5 @@ function DocSidebarMobile(props) {
     />
   );
 }
+
 export default React.memo(DocSidebarMobile);
