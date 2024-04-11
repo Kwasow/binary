@@ -29,7 +29,7 @@ function HomepageContent() {
           Cześć!
         </Heading>
 
-        <HomepageButton title='Start' href='http://localhost:3000/matura/docs/intro/intro'/>
+        <HomepageButton title='Start' href='/matura/docs/category/wstęp'/>
       </div>
       
       <br/>
