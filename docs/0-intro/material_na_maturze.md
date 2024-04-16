@@ -5,8 +5,8 @@ title: 'Materiał na maturze'
 
 :::warning
 
-Informacje na tej stronie były ostatni raz aktualizowane przed maturą w 2024
-roku i mogły ulec zmianie. Aktualną listę można znaleźć na [stronie CKE](https://cke.gov.pl/egzamin-maturalny/egzamin-maturalny-w-formule-2023/podstawa-programowa/).
+Ta strona była ostatni raz aktualizowana przed maturą w 2024 roku i wymagania
+mogły ulec zmianie. Aktualną listę można znaleźć na [stronie CKE](https://cke.gov.pl/egzamin-maturalny/egzamin-maturalny-w-formule-2023/podstawa-programowa/).
 
 :::
 
