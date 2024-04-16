@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Jak wygląda matura?'
+title: 'Jak wygląda matura?'
 ---
 
 :::warning
