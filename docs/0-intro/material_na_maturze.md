@@ -21,12 +21,12 @@ zadania zamknięte, dotyczące między innymi:
 
 # Programowanie
 
-[TODO]
+O zadaniach programistycznych można przeczytać więcej [tutaj](../1-programming/0-wstep.md).
 
 # Bazy danych
 
-[TODO]
+O zadaniach z baz danych można przeczytać więcej [tutaj](../2-databases/0-wstep.md).
 
-# Wiedza ogólna
+# Symulacje (Excel)
 
-[TODO]
+O zadaniach z symulacji można przeczytać więcej [tutaj](../3-excel/0-wstep.md).
