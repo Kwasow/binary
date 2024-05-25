@@ -10,10 +10,23 @@ mogły ulec zmianie. Aktualną listę można znaleźć na [stronie CKE](https://
 
 :::
 
-# Analiza algorytmów
+# Zadania testowe
+
+W zadaniach testowych mogą się pojawiać zadania typu prawda/fałsz, zadania
+z zapisywania i analizy algorytmów, pisania zapytań SQL lub inne teoretyczne
+zadania zamknięte, dotyczące między innymi:
+- działanie sieci komputerowych
+- działania na liczbach w systemach innych niż dziesiętny
+- zamiana systemów liczbowych 
 
 # Programowanie
 
+[TODO]
+
 # Bazy danych
 
+[TODO]
+
 # Wiedza ogólna
+
+[TODO]
