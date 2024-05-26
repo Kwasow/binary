@@ -10,7 +10,7 @@ różniła się znacząco formą i organizacją, ale materiał był podobny.
 
 :::
 
-# Orgzanizacja
+## Orgzanizacja
 
 Matura składa się z jednego arkusza, w którym znajdują się zarówno zadania
 testowe, jak i takie do wykonania z wykorzystaniem komputera. Na całość matury
@@ -35,7 +35,7 @@ znalazły się w folderach, o których pisałem wcześniej, dlatego bardzo ważn
 zdający musi sprawdzić, czy nagrane pliki są zgodne z tym, co rozwiązywał i
 potwierdzić to podpisem.
 
-# Typy zadań
+## Typy zadań
 
 Na maturze pojawia się kilka typów zadań, które często są jakoś ze sobą
 powiązane (np. zadania testowe, które naprowadzają na rozwiązanie zadania z
@@ -47,7 +47,7 @@ programowania). Zadania na maturze to między innymi:
 
 Więcej informacji o typach zadań znajduje się w kolejnym rozdziale.
 
-# Warto wiedzieć
+## Warto wiedzieć
 
 W trakcie pisania matury zdający ma cały czas dostęp do komputera i może
 korzystać ze wszystkich dostępnych na nim narzędzi. W szczególności przydatne

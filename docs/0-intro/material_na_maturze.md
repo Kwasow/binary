@@ -10,7 +10,7 @@ mogły ulec zmianie. Aktualną listę można znaleźć na [stronie CKE](https://
 
 :::
 
-# Zadania testowe
+## Zadania testowe
 
 W zadaniach testowych mogą się pojawiać zadania typu prawda/fałsz, zadania
 z zapisywania i analizy algorytmów, pisania zapytań SQL lub inne teoretyczne
@@ -19,14 +19,14 @@ zadania zamknięte, dotyczące między innymi:
 - działania na liczbach w systemach innych niż dziesiętny
 - zamiana systemów liczbowych 
 
-# Programowanie
+## Programowanie
 
 O zadaniach programistycznych można przeczytać więcej [tutaj](../1-programming/0-wstep.md).
 
-# Bazy danych
+## Bazy danych
 
 O zadaniach z baz danych można przeczytać więcej [tutaj](../2-databases/0-wstep.md).
 
-# Symulacje (Excel)
+## Symulacje (Excel)
 
 O zadaniach z symulacji można przeczytać więcej [tutaj](../3-excel/0-wstep.md).
