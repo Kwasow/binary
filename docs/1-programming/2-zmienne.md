@@ -157,4 +157,3 @@ Dostępne w Pythonie typy to:
 W Pythonie jest oczywiście zdecydowanie więcej wbudowanych typów, ale te są
 najważniejsze i najczęściej spotykane. Zrozumienie zasad działania tych kilku
 podstawowych pomoże nam w przyszłości posługiwać się także innymi.
-
