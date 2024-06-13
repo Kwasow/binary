@@ -50,7 +50,7 @@ napisem (który zapisany jest w cudzysłowie) napisać literę `f`. Jeśli wewn�
 napisu chcemy odwołać się do jakiejś zmiennej, to musimy jej nazwę podać w
 nawiasach klamrowych.
 
-## Czytanie wejścia z wejścia programu
+## Czytanie z wejścia programu
 
 Jeśli chcemy, żeby po uruchomieniu programu pojawiła się możliwość wpisania
 przez użytkownika jakiejś wartości, możemy do tego celu użyć funkcji `input`.
