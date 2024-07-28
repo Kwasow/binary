@@ -40,5 +40,3 @@ Java jest też językiem wysokopoziomowym i pamięć jest zarządzana automatycz
 przez maszynę wirtualną i 
 
 <!-- TODO: Jakiś artykuł o paradygmatach programowania -->
-
-## Typy zadań

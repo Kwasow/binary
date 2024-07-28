@@ -5,7 +5,7 @@ title: Zmienne i operacje arytmetyczne
 
 ## Zmienne
 
-Koncepcja zmeinnych z pewnością znana jest nam chociażby z lekcji matematyki i
+Koncepcja zmiennych z pewnością znana jest nam chociażby z lekcji matematyki i
 warto myśleć o nich w podobny sposób. Spójrzmy na przykładowy program w
 języku Python:
 
@@ -103,8 +103,8 @@ tzn. zdefiniowania z góry typu wartości w niej przechowywanej przechowywanej, 
 - napis (*string*),
 - lista, krotka i wiele innych.
 
-W pythonie nie trzeba podawać typu zmiennych, a co więcej, jej typ można zmieniać
-w trakcie wykonwyania programu. W pythonie poprawnym programem jest na przykład:
+W Pythonie nie trzeba podawać typu zmiennych, a co więcej, ich typ można zmieniać
+w trakcie wykonywania programu. W pythonie poprawnym programem jest na przykład:
 
 ```python showLineNumbers
 x = 12

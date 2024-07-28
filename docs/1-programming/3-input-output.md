@@ -102,4 +102,25 @@ Tym razem program prawidłowo wypisuje już podwojoną, wpisaną przez nas liczb
 
 ## Czytanie wejścia z pliku
 
+Na maturze (i w życiu programisty też), często nie będziemy czytali danych z
+wejścia standardowego programu, ale z pliku. Załóżmy, że mamy dany plik z
+danymi, który wygląda następująco:
+
+```txt showLineNumbers
+Jan Nowak
+Anna Kowalska
+Marzena Wiśniewska
+Kamil Wójcik
+```
+
+Jak widzimy, jest to lista imion i nazwisk - dane każdej osoby znajdują się w
+oddzielnych linijkach i oddzielone są znakiem spacji. Każda linijka jest też
+zakończona niewidzialnym znakiem końca linii (być może widzieliście go kiedyś
+w Wordzie, kiedy włączyliście znaki niedrukowane). Jeśli plik został stworzony
+w Windowsie, to znakiem końca linii jest `\r\n`, a jeśli w systemie zgodnym ze
+standardem UNIX (np. Linux albo macOS) to jest to `\n`.
+
+Załóżmy, że naszym zadaniem jest wypisanie na wyjście standardowe wszystkich
+imion i nazwisk, ale w kolejności `Nazwisko Imię`.
+
 ## Pobieranie argumentów programu

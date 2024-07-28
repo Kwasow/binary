@@ -1,8 +1,8 @@
 {
-  "label": "Algorytmika",
+  "label": "Programowanie",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Analiza algorytmów i programowanie"
+    "description": "Wstęp do programowania"
   }
 }

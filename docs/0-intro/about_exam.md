@@ -10,7 +10,7 @@ różniła się znacząco formą i organizacją, ale materiał był podobny.
 
 :::
 
-## Orgzanizacja
+## Organizacja
 
 Matura składa się z jednego arkusza, w którym znajdują się zarówno zadania
 testowe, jak i takie do wykonania z wykorzystaniem komputera. Na całość matury
