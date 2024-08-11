@@ -137,8 +137,57 @@ y: int = 3
 z: int = 5 + 3
 ```
 
-Dostępne w Pythonie typy to:
+## Dostępne typy
 
+Python posiada bardzo wiele wbudowanych typów, jak również możliwość tworzenia
+własnych. Znajdująca się poniżej lista typów nie jest wyczerpująca, ale powinna
+w zupełności wystarczyć na poziomie matury z informatyki.
+
+### Napisy
+
+Napisy są w Pythonie reprezentowane przez typ `str`. Do poszczególnych znaków
+napisu możemy dostać się tak samo jak do elementów listy (więcej o listach
+poniżej):
+
+```python showLineNumbers
+napis: str = "Ala ma kota"
+
+znak1: str = napis[0]  # Wynikiem będzie "A"
+znak2: str = napis[-2] # Wynikiem będzie "t"
+
+ciag: str = napis[:3]  # Wynikiem będzie "Ala"
+```
+
+Warto też znać funkcję `split()`, którą można wykonać na napisie. Funkcja
+`split()` ma jeden opcjonalny argument, który oznacza znak, na którym ma zostać
+podzielony napis - domyślnie jest to każdy biały znak (spacja, tabulator).
+Wynikiem funkcji split jest lista napisów:
+
+```python showLineNumbers
+napis: str = "Ala ma kota"
+
+podzielony1: list[str] = napis.split()
+# Zmienna podzielony1 przyjmuje wartość:
+# ["Ala", "ma", "kota"]
+
+podzielony2: list[str] = napis.split("a")
+# Zmienna podzielony2 przyjmuje wartość:
+# ["Al", " m", " kot", ""]
+```
+
+### Liczby
+
+
+### Wartości logiczne
+
+
+### Listy i krotki
+
+
+### Zbiory i słowniki
+
+
+<!-- stare
 - `int` - liczba całkowita
 - `float` - liczba zmiennoprzecinkowa
 - `bool` - wartość logiczna (`True` lub `False`)
@@ -153,7 +202,4 @@ Dostępne w Pythonie typy to:
 - `dict`, `dict[int, str]` - słownik, czyli mapa wartości jednego typu w wartości
   drugiego (innego, lub takiego samego); można myśleć, że lista jest mapą z indeksów
   w wartości, więcej o tym typie będzie później
-
-W Pythonie jest oczywiście zdecydowanie więcej wbudowanych typów, ale te są
-najważniejsze i najczęściej spotykane. Zrozumienie zasad działania tych kilku
-podstawowych pomoże nam w przyszłości posługiwać się także innymi.
+-->

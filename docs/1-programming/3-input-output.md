@@ -120,7 +120,102 @@ w Wordzie, kiedy włączyliście znaki niedrukowane). Jeśli plik został stworz
 w Windowsie, to znakiem końca linii jest `\r\n`, a jeśli w systemie zgodnym ze
 standardem UNIX (np. Linux albo macOS) to jest to `\n`.
 
-Załóżmy, że naszym zadaniem jest wypisanie na wyjście standardowe wszystkich
-imion i nazwisk, ale w kolejności `Nazwisko Imię`.
+Żeby odczytać zawartość pliku, musimy go najpierw otworzyć przy użyciu funkcji
+`open()`, która przyjmuje dwa argumenty:
+
+1. **nazwa pliku** - jeśli plik znajduje się w tym samym katalogu, w którym
+   uruchamiany program, to podanie nazwy pliku (wraz z rozszerzeniem) jest
+   wystarczające, ale można także podać jego ścieżkę względną lub bezwzględną
+2. **tryb dostępu** - do wyboru mamy trzy tryby dostępu do pliku:
+  - `r`, czyli tylko do odczytu,
+  - `r+`, czyli do odczytu i zapisu, wskaźnik pisania zostaje ustawiony na
+    początku pliku i funkcja powoduje błąd jeśli plik nie istnieje
+  - `a+`, czyli do odczytu i zapisu, wskaźnik pisania zostaje ustawiony na
+    końcu pliku, w przypadku braku pliku zostaje stworzony nowy
+
+Do czytania z pliku wystarczy nam dostęp w trybie tylko do odczytu, czyli `r`.
+Funkcja `open()` zwraca nam obiekt reprezentujący otwarty plik. Możeny z niego
+następnie odczytać przy pomocy funkcji jednej z trzech funkcji:
+
+- `read` - odczytuje cały plik i zwraca go jako napis,
+- `readline` - odczytuje jedną (kolejną) linijkę z pliku,
+- `readlines` - zwraca listę napisów, z których każdy zawiera jedną linijkę z
+   pliku.
+
+Często najwygodniejsza będzie dla nas funkcja `readlines()`. W praktyce jej
+wykorzystanie będzie wyglądało w ten sposób:
+
+```python showLineNumbers
+plik = open("nazwiska.txt")
+nazwiska: list[str] = plik.readlines()
+print(nazwiska)
+```
+
+Powyższy program powinien na wyjście standardowe wypisać:
+```python
+# W systemie Windows
+['Jan Nowak\r\n', 'Anna Kowalska\r\n', 'Marzena Wiśniewska\r\n', 'Kamil Wójcik\r\n']
+# W systemie Linux/macOS
+['Jan Nowak\n', 'Anna Kowalska\n', 'Marzena Wiśniewska\n', 'Kamil Wójcik\n']
+```
+
+Więcej o tym, jak korzystać z pozostałych funkcji jak i z funkcji `readlines()`
+będzie po wprowadzeniu do naszego programu [pętli](./5-loops.md).
 
 ## Pobieranie argumentów programu
+
+Naszym programom możemy także przekazywać parametry przez argumenty wykonania.
+Do tej pory poznaliśmy dwie metody uruchamiania programów pythonowych:
+
+1. Poprzez wpisanie kodu programu do interpretera
+2. Poprzez napisaniu skryptu (pliku o rozszerzeniu `.py`), który zostanie
+   wykonany przez interpreter.
+
+Argumenty można przekazywać tylko do programów, które uruchamiane są zgodnie z
+drugą metodą.
+
+Przyjmijmy, że chcemy napisać program, który dodaje do siebie dwa argumenty
+otrzymane przy wykonywaniu programu. W systemie operacyjnym Linux moglibyśmy
+wykonać taki program w ten sposób:
+
+:::info
+
+W zapisie poleceń wykonywanych w wierszu poleceń linie zaczynające się od `$`
+oznaczają polecenia wpisane przez programistę, a `>` oznaczają linie wypisane
+przez program.
+
+W poniższym przykładzie widzimy wykonanie jednego polecenia, które wypisało
+liczbę 6. Polecenie to składa się z kilku części:
+
+- `python3` to nazwa programu zainstalowanego na naszym komputerze, czyli w tym
+  przypadku interpreter Pythona w wersji 3,
+- `main.py` to argument, który zostaje przekazany do interpretera, czyli nazwa
+  pliku z programem, który napisaliśmy,
+- `2` i `4` to argumenty, które zostaną przekazane do naszego programu w pliku
+  `main.py`, może ich być dowolnie wiele.
+
+:::
+
+
+```bash
+$ python3 main.py 2 4
+> 6
+```
+
+Żeby odczytywać argumenty programu musimy skorzystać z biblioteki `sys` oraz
+znajdującej się w niej wartości `argv`. Wartość `argv` przechowuje listę
+argumentów, które zostały przekazane do programu. Dla powyższego przykładowego
+wywołania programu, zawartość pliku `main.py` wyglądałaby następująco:
+
+```python showLineNumbers
+# Importujemy bibliotekę sys
+import sys
+
+# Odczytujemy pole przechowujące argumenty programu
+argumenty: list[str] = sys.argv
+
+# Wykonujemy obliczenie
+liczba1 = int(argumenty[0])
+liczba2 = int(argumenty[1])
+print(liczba1 + liczba2)
+```
