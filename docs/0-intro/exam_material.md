@@ -21,13 +21,13 @@ zadania zamknięte, dotyczące między innymi:
 
 ## Programowanie
 
-O zadaniach programistycznych można przeczytać więcej [tutaj](../1-programming/0-wstep.md)
-i [tutaj](../2-algorythimcs/0-wstep.md).
+O zadaniach programistycznych można przeczytać więcej [tutaj](../1-programming/0-intro.md)
+i [tutaj](../2-algorythmics/0-intro.md).
 
 ## Bazy danych
 
-O zadaniach z baz danych można przeczytać więcej [tutaj](../3-databases/0-wstep.md).
+O zadaniach z baz danych można przeczytać więcej [tutaj](../3-databases/0-intro.md).
 
 ## Symulacje (Excel)
 
-O zadaniach z symulacji można przeczytać więcej [tutaj](../4-excel/0-wstep.md).
+O zadaniach z symulacji można przeczytać więcej [tutaj](../4-excel/0-intro.md).

@@ -89,7 +89,7 @@ Warto zaznaczyć przy tej okazji, że z powodu sposobu reprezentacji liczb
 niecałkowitych w pamięci komputera, pojawiają się tu pewnie niedokładności.
 Jeśli w pythonie wykonamy obliczenie `0.3-0.1`, to wynikiem będzie
 `0.19999999999999998`. Więcej o powodach tej niedokładności będzie mowa później
-([tutaj](../5-extras/1-niedokladnosc-arytmetyki.md)), ale warto pamiętać, że
+([tutaj](../6-extras/1-floatingpoint-arithmetics.md)), ale warto pamiętać, że
 takie zjawisko zachodzi i może wpływać na wyniki naszych obliczeń.
 
 ## Typy w Pythonie
@@ -127,7 +127,7 @@ przypisania wartości niewłaściwego typu na zmienną nadal się powiedzie, jed
 nasze środowisko programistyczne (np. PyCharm) poinformuje nas o błędnym
 przypisaniu. Pomoże to też podpowiadać środowisku odpowiednie funkcje, które
 dostępne są tylko dla niektórych typów (o funkcjach będzie później mowa
-[tutaj](./5-funkcje.md)).
+[tutaj](./6-functions.md)).
 
 W przypadku zmiennych, typy można dopisać w Pythonie po dwukropku:
 
