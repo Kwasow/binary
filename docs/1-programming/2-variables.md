@@ -83,14 +83,9 @@ Większość problemów można rozwiązać bez użycia operacji pierwiastkowania
 Każdą z powyższych operacji można też wykonywać na zmiennych, które przechowują
 wartości liczbowe, tak jak to było pokazane w przykładzie pierwszym.
 
-### Niedokładność arytmetyki zmiennoprzecinkowej
+## Operacje logiczne
 
-Warto zaznaczyć przy tej okazji, że z powodu sposobu reprezentacji liczb
-niecałkowitych w pamięci komputera, pojawiają się tu pewnie niedokładności.
-Jeśli w pythonie wykonamy obliczenie `0.3-0.1`, to wynikiem będzie
-`0.19999999999999998`. Więcej o powodach tej niedokładności będzie mowa później
-([tutaj](../6-extras/1-floatingpoint-arithmetics.md)), ale warto pamiętać, że
-takie zjawisko zachodzi i może wpływać na wyniki naszych obliczeń.
+TODO
 
 ## Typy w Pythonie
 
@@ -175,8 +170,74 @@ podzielony2: list[str] = napis.split("a")
 # ["Al", " m", " kot", ""]
 ```
 
+Na napisach można też wykonywać niektóre operacje "arytemtyczne", na przykład:
+
+```python showLineNumbers
+napis1: str = "test "
+napis2: str = "dodawania"
+
+# To spowoduje wypisanie: "test dodawania"
+print(napis1 + napis2)
+
+# To spowoduje wypisanie: "test test test test "
+print(napis1 * 4)
+```
+
 ### Liczby
 
+Większość języków programowania dzieli liczby na dwie grupy:
+- liczby całkowite (ang. *integer*) - w Pythonie jest to typ `int`
+- liczby zmienno przecinkowe (ang. *floating-point* albo *double precision*),
+  czyli niecałkowite, posiadające część dziesiętną - w Pythonie jest to typ
+  `float`
+
+Na liczbach można wykonywać operacje, które zostały przedstawione wyżej, w
+rozdziale o operacjach arytmetycznych. Dodatkowo warto wiedzieć, że istnieje
+możliwość zamienienia liczby zapisanej w formie napisu, na jej faktyczną
+wartość liczbową przy użyciu funkcji odpowiednio `float` oraz `int`. Pomoże to
+zrozumieć poniższy przykład.
+
+```python showLineNumbers
+napis1: str = "5"
+napis2: str = "5.0"
+
+# Pomnóżmy teraz napisy przez 4 na dwa różne sposoby
+print(napis1 * 4)        # Wynik: 5555
+print(int(napis1) * 4)   # Wynik: 20
+
+print(napis2 * 4)        # Wynik: 5.05.05.05.0
+print(float(napis2) * 4) # Wynik: 20.0
+```
+
+Zobaczmy też, co stanie się, jeśli do funkcji `int()` podamy wartość, która nie
+jest liczbą:
+
+```python
+print(int("to nie jest liczba!"))
+```
+
+Jeśli powyższe polecenie wykonaliśmy w interpreterze, to powinien wypisać się
+błąd:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'to nie jest liczba'
+```
+
+Taki błąd w informatyce nazywamy wyjątkiem i więcej o wyjątkach pojawi się w
+rozdziale [Wyjątki](./8-exceptions.md), a na razie wystarczy nam wiedzieć, że
+oznacza to, że nasz program napotkał sytuację, z którą nie mógł sobie poradzić
+(zamienienie zwykłego tekstu na liczbę) i przestał się wykonywać.
+
+#### Niedokładność arytmetyki zmiennoprzecinkowej
+
+Warto zaznaczyć przy tej okazji, że z powodu sposobu reprezentacji liczb
+niecałkowitych w pamięci komputera, pojawiają się tu pewnie niedokładności.
+Jeśli w pythonie wykonamy obliczenie `0.3-0.1`, to wynikiem będzie
+`0.19999999999999998`. Więcej o powodach tej niedokładności będzie mowa później
+([tutaj](../6-extras/1-floatingpoint-arithmetics.md)), ale warto pamiętać, że
+takie zjawisko zachodzi i może wpływać na wyniki naszych obliczeń.
 
 ### Wartości logiczne
 
