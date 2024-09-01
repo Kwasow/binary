@@ -63,6 +63,15 @@ nie spowoduje błędu związanego ze zbyt dużym (nieistniejącym) indeksem:
 Na koniec zobaczmy tylko, jak napisać pętlę, która będzie się wykonywała w
 nieskończoność:
 
+:::warning
+
+Ten program będzie wykonywał się w nieskończoność. Jeśli chcemy przerwać jego
+wykonanie, to możemy skorystać z czerwonego przycisku zatrzymania w PyCharmie,
+który znajduje się obok zielonego przycisku "play". Alternatywnie możemy
+użyć skrótu klawiszowego `Ctrl-C` w okienku, w którym wykonuje się program.
+
+:::
+
 ```python showLineNumbers
 i: int = 0
 
@@ -150,6 +159,37 @@ Zachęcam do sprawdzenia powyższego przykładu samemu.
 
 ## Instrukcje `continue` oraz `break`
 
+Zobaczyliśmy już jak działają pętle, a także przykład pętli nieskończonej.
+Nasuwa się więc pytanie, jak możemy zakończyć wykonanie pętli wcześniej? Do tak
+zwanej *kontroli przepływu* (ang. *flow control*) służą dwie instrukcje, które
+dostępne są tylko wewnątrz pętli. Zobaczmy ich działanie na przykładzie:
+
+```python showLineNumbers
+for i in range(9):
+  if i % 2 == 0:
+    continue
+  
+  if i == 6:
+    break
+  
+  print(f"Wartość i to {i}")
+```
+
+Powyższy program wypisze na wyjście standardowe:
+
+```
+> Wartość i to 1
+> Wartość i to 3
+> Wartość i to 5
+```
+
+Instrukcja `continue` powoduje zatrzymanie wykonywania **aktualnej** iteracji
+pętli i rozpoczyna wykonanie kolejnej iteracji, dlatego w powyższym przykładzie
+nie są wypisywane liczby parzyste.
+
+Intrukcja `break` powoduje całkowite zatrzymanie **całego** wykonania pętli,
+dlatego nie zostają wypisane wartości większe od 5.
+
 ## Inne sposoby iteracji
 
 Poniżej przedstawiony został materiał dodatkowy, czyli metody iteracji dostępne
@@ -159,4 +199,61 @@ programowania.
 
 ### Pętla `do-while`
 
+Pętlą podobną do `while` jest pętla `do-while` dostępna w większości języków
+programowania, np. w C i C++:
+
+```cpp showLineNumbers
+#include <iostream>
+
+// Tworzymy nową zmienną typu całkowitoliczbowego
+int i = 0;
+
+// Zwykła pętla while
+while (i < 0) {
+  // Instrukcja wypisania, która nigdy się nie wykona, bo 0 < 0 zwraca False
+  std::cout << "Wykonanie pętli while" << std::endl;
+}
+
+// Pętla do-while
+do {
+  // Instrukcja wypisania wykona się raz
+  std::cout << "Wykonanie pętli do-while" << std::endl;
+} while (i < 0)
+```
+
+Już sam zapis treści pętli `do-while`sugeruje jej działanie - pętla najpierw
+jest wykonywana w całości, a potem dopiero sprawdzany jest warunek. Oznacza to,
+że w przeciwnieństwie do pętli `while`, treść pętli `do-while` zawsze zostanie
+wykonana przynajmniej raz.
+
+Pętla `do-while` nie jest często spotykaną konstrukcją, ale są pewne problemy,
+które najłatwiej rozwiązać z jej użyciem.
+
 ### Konstrukcja `foreach`
+
+Konstrukcja `foreach` jest dostępna na przykład w języku programowania `Java`
+i jest podobna do wspomnianej wcześniej pętli `for` na listach w Pythonie.
+Pozwala ona iterować się po elementach listy w następujący sposób:
+
+```java showLineNumbers
+ArrayList<Integer> lista = new ArrayList();
+lista.add(1);
+lista.add(2);
+lista.add(3);
+
+lista.forEach(elem -> {
+  System.out.println(elem)
+});
+```
+
+Powyższy program wypisze:
+
+```
+> 1
+> 2
+> 3
+```
+
+Zmienna `elem` przyjmuje jako wartość kolejne elementy z listy `lista`. W
+nawiasach wąsatych zapisana jest treść funkcji, która wykonywana jest dla
+każdego elementu i dostępna jest w niej zmienna `elem`.
