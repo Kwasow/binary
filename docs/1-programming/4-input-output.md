@@ -219,3 +219,12 @@ liczba1 = int(argumenty[0])
 liczba2 = int(argumenty[1])
 print(liczba1 + liczba2)
 ```
+
+Jeśli nasz program przyjmuje argumenty wejściowe, to dobrą praktyką jest
+sprawdzenie czy ich liczba się zgadza oraz czy są poprawne. Jeśli nie są
+poprawne, to powinniśmy wpisać błąd w formacie podobnym do tego:
+
+```
+Error: Niepoprawna liczba argumentów
+Usage: python3 main.py <liczba1> <liczba2>
+```
