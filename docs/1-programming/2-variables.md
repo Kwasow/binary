@@ -136,3 +136,11 @@ x2 = (7 < 5 and 6 < 5) or (10 < 20)   # Wynik: True
 # Ale jest czym innym niż:
 y = (7 < 5) and (6 < 5 or 10 < 20)    # Wynik: False
 ```
+
+Ostatnim operatorem logicznym jest `not`, który odwraca wynik pozostałych
+operacji:
+
+```python showLineNumbers
+x1 = 1 < 2        # Wynik: True
+x2 = not (1 < 2)  # Wynik: False
+```
