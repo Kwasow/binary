@@ -17,6 +17,7 @@ problemy są funkcje.
 
 Funkcje to nic innego jak nazwane kawałki kodu, które możemy wykonać z dowolnego
 miejsca w naszym programie. Funkcje mają dwie bardzo ważne cechy:
+
 - przyjmują **argumenty** - funkcje nie mają dostępu do zmiennych zdefiniowanych
   poza nimi (czyli w szczególności w miejscu, w którym je wołamy), ale argumenty
   pozwalają nam przekazać odpowiednie wartości do funkcji jako nowe zmienne,
@@ -106,6 +107,7 @@ W powyższym przykładzie dzieje się wiele rzeczy, więc zacznijmy od deklaracj
 funkcji - deklaracja to inaczej nazwanie funkcji i określenie argumentów.
 
 Deklaracja składa się z czterech części:
+
 1. `def` - słowo kluczowe rozpoczynające deklarację
 2. nazwy funkcji wraz z nawiasami okrągłymi
 3. deklaracji argumentów w nawiasach okrągłych (podawanie typów jest oczywiście
@@ -117,7 +119,7 @@ przyjmuje żadnych argumentów. Funkcja nie musi też nic zwracać i wtedy jako
 zwracany typ (punkt 4.) możemy podać wspomniany wcześniej typ `None`.
 
 Kolejnym ważnym elementem w powyższej funkcji jest instrukcja `return` (ang.
-*zwróć*) będąca częścią definicji funkcji (czyli jej kodu). Instrukcja ta
+_zwróć_) będąca częścią definicji funkcji (czyli jej kodu). Instrukcja ta
 natychmiast kończy wykonanie funkcji i zwraca wyrażenie przy niej zapisane.
 Wyrażeniem tym może być nazwa zmiennej, wyrażenie arytmetyczne lub logiczne albo
 stała (np. `5`).
@@ -135,7 +137,7 @@ def czyParzysta1(x: int) -> bool:
 def czyParzysta2(x: int) -> bool:
   if x % 2 == 0:
     return True
-  
+
   return False
 
 def czyParzysta3(x: int) -> bool:
@@ -178,5 +180,6 @@ trzymać się kilku prostych zasad:
    niż 80-100 linii), to powinniśmy podzielić kod na funkcje
 
 Przy pisaniu funkcji warto pamiętać o dwóch regułach:
+
 1. Nazwy funkcji powinny być znaczące i informować o tym, co dana funkcja robi
 2. Funkcje nie powinny być zbyt długie (max. 80-100 linii)

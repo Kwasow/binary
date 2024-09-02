@@ -8,10 +8,10 @@ title: Typy
 Wiele języków programowania (np. Java, C, C++) wymagają podawania typu zmiennej,
 tzn. zdefiniowania z góry typu wartości w niej przechowywanej, na przykład:
 
-- liczba całkowita (*int* od angielskiego *integer*),
-- liczba niecałkowita (*float* od angielskiego *floating point*),
-- znak (*char* od angielskiego *character*),
-- napis (*string*),
+- liczba całkowita (_int_ od angielskiego _integer_),
+- liczba niecałkowita (_float_ od angielskiego _floating point_),
+- znak (_char_ od angielskiego _character_),
+- napis (_string_),
 - lista, krotka i wiele innych.
 
 W Pythonie nie trzeba podawać typu zmiennych, a co więcej, ich typ można zmieniać
@@ -101,6 +101,7 @@ print(napis1 * 4)
 
 Napisy można także porównywać przy użyciu operatorów logicznych. Porównywanie
 napisów odbywa się zgodnie z porządkiem leksykograficznym, czyli:
+
 - napisy porównywane są znak po znaku,
 - litery `A-Z` są przed `a-z`,
 - litery pojawiające się w alfabecie wcześniej, są mneijsze, czyli `a` jest
@@ -113,8 +114,9 @@ na porównaniu wartości liczbowej każdego znaku po kolei.
 ### Liczby
 
 Większość języków programowania dzieli liczby na dwie grupy:
-- liczby całkowite (ang. *integer*) - w Pythonie jest to typ `int`
-- liczby zmienno przecinkowe (ang. *floating-point* albo *double precision*),
+
+- liczby całkowite (ang. _integer_) - w Pythonie jest to typ `int`
+- liczby zmienno przecinkowe (ang. _floating-point_ albo _double precision_),
   czyli niecałkowite, posiadające część dziesiętną - w Pythonie jest to typ
   `float`
 
@@ -153,7 +155,7 @@ ValueError: invalid literal for int() with base 10: 'to nie jest liczba'
 ```
 
 Taki błąd w informatyce nazywamy wyjątkiem i więcej o wyjątkach pojawi się w
-rozdziale [Wyjątki](./8-exceptions.md), a na razie wystarczy nam wiedzieć, że
+rozdziale [Wyjątki](./9-exceptions.md), a na razie wystarczy nam wiedzieć, że
 oznacza to, że nasz program napotkał sytuację, z którą nie mógł sobie poradzić
 (zamienienie zwykłego tekstu na liczbę) i przestał się wykonywać.
 
@@ -179,7 +181,7 @@ wartości, możemy sprawdzić przy pomocy funkcji `bool()`:
 ```python showLineNumbers
 # W przypadku liczb, zero jest interpretowane jako False, a wszystkie inne
 # wartości jako True
-print(bool(0))        # Wynik: False 
+print(bool(0))        # Wynik: False
 print(bool(1))        # Wynik: True
 print(bool(-1))       # Wynik: True
 
@@ -260,7 +262,7 @@ Na listach można wykonywać różne operacje (pełna lista [tutaj](https://docs
 - `list.append(elem)` - dopisanie na koniec nowego elementu `elem`
 - `list.insert(i, elem)` - wstawienie `elem` na `i`-ty indeks
 - `list.pop(i)` lub `list.pop()` - usunięcie i zwrócenie `i`-tego elementu z
-   listy, jeśli nie podamy indeksu `i` to usunięty zostanie ostatni element
+  listy, jeśli nie podamy indeksu `i` to usunięty zostanie ostatni element
 - `list.sort()` - posortowanie elementów listy
 - `len(list)` - sprawdzenie długości listy
 
@@ -327,6 +329,7 @@ print(zbior2)  # Wynik: {'marchewka', 'banan', 'jabłko'}
 ```
 
 Na zbiorach można wykonywać funkcje podobne do tych na listach:
+
 - `set.add(elem)` - wstawienie elementu
 - `set.remove(elem)` - usunięcie elementu
 - operator `in` - sprawdzenie czy element jest w zbiorze
@@ -350,6 +353,7 @@ rozmiar = len(zbior)      # Wynik: 5
 ```
 
 Na zbiorach można też wykonywać operacje znane nam z matematyki:
+
 - `a | b` - suma, wszystkie elementy z a i b
 - `a ^ b` - suma wszystkie elementy z a i b, które nie są w obu
 - `a - b` - różnica, elementy w a, ale nie w b
@@ -358,7 +362,7 @@ Na zbiorach można też wykonywać operacje znane nam z matematyki:
 ### Słowniki
 
 Słownik, tak samo jak w rzeczywistości, to zbiór par. Pierwszy element takiej
-pary nazywamy kluczem (*ang.* key), a drugi wartością (*ang.* value). Dostęp
+pary nazywamy kluczem (_ang._ key), a drugi wartością (_ang._ value). Dostęp
 do elementów odbywa się przy pomocy nawiasów kwadratowych, podobnie jak w
 przypadku listy. Zobaczmy działanie zbiorów na przykładzie:
 

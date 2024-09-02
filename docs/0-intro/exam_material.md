@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: 'Materiał na maturze'
+title: "Materiał na maturze"
 ---
 
 :::warning
@@ -15,9 +15,10 @@ mogły ulec zmianie. Aktualną listę można znaleźć na [stronie CKE](https://
 W zadaniach testowych mogą się pojawiać zadania typu prawda/fałsz, zadania
 z zapisywania i analizy algorytmów, pisania zapytań SQL lub inne teoretyczne
 zadania zamknięte, dotyczące między innymi:
+
 - działanie sieci komputerowych
 - działania na liczbach w systemach innych niż dziesiętny
-- zamiana systemów liczbowych 
+- zamiana systemów liczbowych
 
 ## Programowanie
 

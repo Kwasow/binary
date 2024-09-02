@@ -37,6 +37,6 @@ Bytecode jest uruchamiany wewnątrz maszyny wirtualnej, która dopiero wykonuje
 odpowiednie instrukcje maszynowe. Najważniejszą cechą Javy jest dostępność
 obiektowości, z której jednak nie będziemy zbyt dużo korzystać na maturze.
 Java jest też językiem wysokopoziomowym i pamięć jest zarządzana automatycznie
-przez maszynę wirtualną i 
+przez maszynę wirtualną i
 
 <!-- TODO: Jakiś artykuł o paradygmatach programowania -->

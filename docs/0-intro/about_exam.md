@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: 'Jak wygląda matura?'
+title: "Jak wygląda matura?"
 ---
 
 :::warning
@@ -40,6 +40,7 @@ potwierdzić to podpisem.
 Na maturze pojawia się kilka typów zadań, które często są jakoś ze sobą
 powiązane (np. zadania testowe, które naprowadzają na rozwiązanie zadania z
 programowania). Zadania na maturze to między innymi:
+
 - zadania testowe (teoretyczne, analiza algorytmów, SQL)
 - zadania programistyczne (do wyboru C++/Python/Java)
 - zadania z bazą danych
