@@ -1,4 +1,18 @@
-- uses: actions/checkout@v2 # Check out the repository first.
-- uses: actionsx/prettier@v2
-  with:
-    args: --check docs/
+name: Prettier
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - run: |
+          yarn install
+          yarn pretty-check
