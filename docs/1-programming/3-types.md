@@ -155,7 +155,7 @@ ValueError: invalid literal for int() with base 10: 'to nie jest liczba'
 ```
 
 Taki błąd w informatyce nazywamy wyjątkiem i więcej o wyjątkach pojawi się w
-rozdziale [Wyjątki](./8-exceptions.md), a na razie wystarczy nam wiedzieć, że
+rozdziale [Wyjątki](./9-exceptions.md), a na razie wystarczy nam wiedzieć, że
 oznacza to, że nasz program napotkał sytuację, z którą nie mógł sobie poradzić
 (zamienienie zwykłego tekstu na liczbę) i przestał się wykonywać.
 

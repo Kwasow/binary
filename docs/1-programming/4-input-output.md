@@ -13,7 +13,7 @@ rozdziale przedstawione zostaną trzy takie metody.
 
 Do wypisywania komunikatów z programu służy funkcja `print`, która może
 przyjmować argumenty dowolnego typu. Funkcje w Pythonie wołamy przy pomocy
-nawiasów okrągłych (więcej o funkcjach [tutaj](./6-functions.md)).
+nawiasów okrągłych (więcej o funkcjach [tutaj](./7-functions.md)).
 
 Najprostszym programem, który coś wypisuje, może być pojedyncze wywołanie funkcji
 `print` - wykonaj poniższy program w środowisku PyCharm i sprawdź, czy poprawnie
@@ -162,7 +162,7 @@ Powyższy program powinien na wyjście standardowe wypisać:
 ```
 
 Więcej o tym, jak korzystać z pozostałych funkcji jak i z funkcji `readlines()`
-będzie po wprowadzeniu do naszego programu [pętli](./5-loops.md).
+będzie po wprowadzeniu do naszego programu [pętli](./6-loops.md).
 
 ## Pobieranie argumentów programu
 
