@@ -127,11 +127,12 @@ standardem UNIX (np. Linux albo macOS) to jest to `\n`.
    uruchamiany program, to podanie nazwy pliku (wraz z rozszerzeniem) jest
    wystarczające, ale można także podać jego ścieżkę względną lub bezwzględną
 2. **tryb dostępu** - do wyboru mamy trzy tryby dostępu do pliku:
-  - `r`, czyli tylko do odczytu,
-  - `r+`, czyli do odczytu i zapisu, wskaźnik pisania zostaje ustawiony na
-    początku pliku i funkcja powoduje błąd jeśli plik nie istnieje
-  - `a+`, czyli do odczytu i zapisu, wskaźnik pisania zostaje ustawiony na
-    końcu pliku, w przypadku braku pliku zostaje stworzony nowy
+
+- `r`, czyli tylko do odczytu,
+- `r+`, czyli do odczytu i zapisu, wskaźnik pisania zostaje ustawiony na
+  początku pliku i funkcja powoduje błąd jeśli plik nie istnieje
+- `a+`, czyli do odczytu i zapisu, wskaźnik pisania zostaje ustawiony na
+  końcu pliku, w przypadku braku pliku zostaje stworzony nowy
 
 Do czytania z pliku wystarczy nam dostęp w trybie tylko do odczytu, czyli `r`.
 Funkcja `open()` zwraca nam obiekt reprezentujący otwarty plik. Możeny z niego
@@ -140,7 +141,7 @@ następnie odczytać przy pomocy funkcji jednej z trzech funkcji:
 - `read` - odczytuje cały plik i zwraca go jako napis,
 - `readline` - odczytuje jedną (kolejną) linijkę z pliku,
 - `readlines` - zwraca listę napisów, z których każdy zawiera jedną linijkę z
-   pliku.
+  pliku.
 
 Często najwygodniejsza będzie dla nas funkcja `readlines()`. W praktyce jej
 wykorzystanie będzie wyglądało w ten sposób:
@@ -152,6 +153,7 @@ print(nazwiska)
 ```
 
 Powyższy program powinien na wyjście standardowe wypisać:
+
 ```python
 # W systemie Windows
 ['Jan Nowak\r\n', 'Anna Kowalska\r\n', 'Marzena Wiśniewska\r\n', 'Kamil Wójcik\r\n']
@@ -195,7 +197,6 @@ liczbę 6. Polecenie to składa się z kilku części:
   `main.py`, może ich być dowolnie wiele.
 
 :::
-
 
 ```bash
 $ python3 main.py 2 4

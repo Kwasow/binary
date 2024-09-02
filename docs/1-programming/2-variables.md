@@ -36,6 +36,7 @@ y = 5
 x = y
 z = x + y
 ```
+
 W powyższym przykładzie `x` przyjmuje w trzeciej linijce wartość 5, a następnie
 `z` przyjmuje wartość 10.
 
@@ -77,6 +78,7 @@ y = 13 % 4   # Wynikiem będzie 1
 # Potęgowanie
 y = 2**5     # Wynikiem będzie 32
 ```
+
 Dostępna jest też operacja pierwiastkowania, ale o niej będzie mowa później.
 Większość problemów można rozwiązać bez użycia operacji pierwiastkowania.
 

@@ -58,7 +58,7 @@ Widzimy teraz:
   a zainteresowani mogą o nim poczytać więcej [tutaj](https://docs.python.org/3/library/venv.html))
 - główne okno edycji na środku
 - przyciski do uruchamiania programu w prawym górnym rogu - na razie interesuje nas
-  tylko przycisk "play", ale później wytłumaczone zostanie też zastosowanie 
+  tylko przycisk "play", ale później wytłumaczone zostanie też zastosowanie
   przycisku z ikonką robaka
 - interpreter Pythona na dole (więcej o nim za chwilę)
 

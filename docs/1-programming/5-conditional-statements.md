@@ -12,7 +12,7 @@ nazywana `switch-case`).
 
 ## Instrukcja `if`
 
-Instrukcja `if` (od angielskiego *jeżeli*) jest prostszą z dwóch dostępnych
+Instrukcja `if` (od angielskiego _jeżeli_) jest prostszą z dwóch dostępnych
 instrukcji. Być może niektórzy znają ją z programu Microsoft Excel, często
 używanym na wcześniejszych etapach nauki. W najprostszej swojej formie
 wygląda ona następująco:
@@ -27,7 +27,7 @@ else:
 W miejsce `wyrazenie` możemy wpisać nazwę zmiennej typu bool lub dowolne
 wyrażenie logiczne. Tak zwana gałąź `if` wykona się, jeśli wyrażenie zwróci
 wartość `True`. W przeciwnym razie wykona się kod w gałęzi `else` (od
-angielskiego *w przeciwnym przypadku*).
+angielskiego _w przeciwnym przypadku_).
 
 Załóżmy, że mamy program, który wypisuje, czy liczba jest parzysta. Wyglądałby
 on następująco:
@@ -131,6 +131,7 @@ print(f"Cena owocu '{owoc}' to: {cena}")
 ```
 
 Zwróćmy uwagę na kilka ważnych rzeczy:
+
 - instrukcję rozpoczynamy od słowa kluczowego `match`, po którym należy wpisać
   wyrażenie (nazwę zmiennej), które będziemy dopasowywać do przypadków,
 - każdy przypadek zaczyna się od słowa kluczowego `case`, po którym wpisana jest

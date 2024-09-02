@@ -12,7 +12,7 @@ wykonywać operacje wielokrotnie.
 
 ## Pętla `while`
 
-Pętla `while` (z angielskiego *dopóki*) jest rozszerzeniem instrukcji warunkowej
+Pętla `while` (z angielskiego _dopóki_) jest rozszerzeniem instrukcji warunkowej
 `if`. Ma taką samą konstrukcję, z tą różnicą, że jej ciało będzie się wykonywało
 tak długo, jak spełniony będzie postawiony w niej warunek. Spójrzmy na poniższy
 przykład:
@@ -56,9 +56,10 @@ print(f"Suma elementów listy to: {suma}")
 Jak dobrze pamiętamy, listy w Pythonie są indeksowane od zera, stąd początkowa
 wartość zmiennej `i` to właśnie zero. Zwróćmy też uwagę, że tak napisana pętla
 nie spowoduje błędu związanego ze zbyt dużym (nieistniejącym) indeksem:
+
 - jeśli lista jest pusta, to `len(lista) == 0`, więc pętla się nie wykona,
 - jeśli długość listy to `n`, to po wyjściu z pętli `i == n`, ale iteracja dla
-  `i == n` się nie wykona, tak jak w poprzednim przykładzie. 
+  `i == n` się nie wykona, tak jak w poprzednim przykładzie.
 
 Na koniec zobaczmy tylko, jak napisać pętlę, która będzie się wykonywała w
 nieskończoność:
@@ -161,17 +162,17 @@ Zachęcam do sprawdzenia powyższego przykładu samemu.
 
 Zobaczyliśmy już jak działają pętle, a także przykład pętli nieskończonej.
 Nasuwa się więc pytanie, jak możemy zakończyć wykonanie pętli wcześniej? Do tak
-zwanej *kontroli przepływu* (ang. *flow control*) służą dwie instrukcje, które
+zwanej _kontroli przepływu_ (ang. _flow control_) służą dwie instrukcje, które
 dostępne są tylko wewnątrz pętli. Zobaczmy ich działanie na przykładzie:
 
 ```python showLineNumbers
 for i in range(9):
   if i % 2 == 0:
     continue
-  
+
   if i == 6:
     break
-  
+
   print(f"Wartość i to {i}")
 ```
 
