@@ -94,13 +94,12 @@ wiersze jednej tabeli z drugą zgodnie z pewnym warunkiem.
 
 Mamy różne możliwości łączenia tabel:
 
-- `JOIN` albo `INNER JOIN` - w wyniku są tylko te wiersze, które udało się
-  dopasować w obu tabelach,
+- `JOIN` - w wyniku są tylko te wiersze, które udało się dopasować w obu tabelach,
 - `LEFT JOIN` - w wyniku są wszystkie wiersze z lewej tabeli i te wiersze z prawej
   tabeli, które udało się dopasować (wartości `NULL`, jeśli takich nie było),
 - `RIGHT JOIN` - w wyniku są wszystkie wiersze z prawej tabeli i te wiersze z lewej,
   tabeli, które udało się dopasować (wartości `NULL`, jeśli takich nie było),
-- `OUTER JOIN` albo `FULL JOIN` - wszystkie wiersze z obu tabel, z wartościami
+- `FULL OUTER JOIN` - wszystkie wiersze z obu tabel, z wartościami
   `NULL` w miejscach, gdzie nie udało się nic dopasować.
 
 Nazwy powyższych klauzul `JOIN` często różnią się w różnych wariantach języka
