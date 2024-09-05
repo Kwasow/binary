@@ -4,6 +4,7 @@ title: "Podsumowanie zapytań"
 ---
 
 Rzeczy, o których warto pamiętać, żeby było nam wygodniej czytać SQLa:
+
 - klauzule zapisujemy wielkimi literami, a nazwy kolumn i tabel małymi,
 - zaczynamy kolejne części zapytania od nowych linijek.
 

@@ -42,7 +42,7 @@ z MsSQLa:
   zwraca różnicę między datami w podanej jednostce czasu.
 
 Na czasie można też wykonywać normalne operacje arytmetyczne `+` i `-`, ale nie
-zawsze będą się one dobrze zachowywały – jeśli to możliwe, lepiej użyć 
+zawsze będą się one dobrze zachowywały – jeśli to możliwe, lepiej użyć
 odpowiedniej funkcji.
 
 Pełna lista funkcji dostępna w [dokumentacji](https://support.microsoft.com/en-us/office/access-functions-by-category-b8b136c3-2716-4d39-94a2-658ce330ed83).
