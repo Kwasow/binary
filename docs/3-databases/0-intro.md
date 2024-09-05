@@ -27,10 +27,11 @@ implementacje języka SQL różnią się nieznacznie między sobą.
 
 Dane w bazie pogrupowane są w tabele. Każda tabela składa się z kolumn, z których
 każda ma nazwę i określony typ. Dodatkowo jedna z kolumn powinna być oznaczona
-jako *klucz główny*. Klucz główny to unikalna wartość, która jednoznacznie
+jako _klucz główny_. Klucz główny to unikalna wartość, która jednoznacznie
 identyfikuje wiersz tabeli, może nim być jedna kolumna lub zbiór kolumn.
 Dostępne typy różnią się nieznacznie między wariantami SQLa, ale zwykle są to:
-- `INTEGER` - liczba całkowita,
+
+- `INTEGER/INT` - liczba całkowita,
 - `FLOAT`, `DOUBLE` - liczby zmiennoprzecinkowe i podwójnej precyzji,
 - `VARCHAR(n)` - napis o długości `n`,
 - `DATETIME` - data i godzina,
@@ -43,20 +44,21 @@ kluczem obcym, tzn. jest powiązana z tabelą `dept` i pozwala połączyć wiers
 tabeli `emp` z odpowiednimi wierszami tabeli `dept`.
 
 **emp:**
-| `id` | `name` | `position` | `sal` | `manager` | `dept` |
-|---|---|---|---|---|---|
-| 1367 | "Marek" | "Operator serwera" | 1200 | 1369 | 1 |
-| 1368 | "Agata" | "Programista" | 1400 | 1369 | 1 |
-| 1369 | "Aneta" | "Manager zespołu" | 2500 | NULL | 1 |
-| 1370 | "Zbigniew" | "Dział Kadr" | 1500 | NULL | 2 |
+
+| `id` | `first_name` | `position`         | `sal` | `manager` | `dept` |
+| ---- | ------------ | ------------------ | ----- | --------- | ------ |
+| 1367 | "Marek"      | "Operator serwera" | 1200  | 1369      | 1      |
+| 1368 | "Agata"      | "Programista"      | 1400  | 1369      | 1      |
+| 1369 | "Aneta"      | "Manager zespołu"  | 2500  | NULL      | 1      |
+| 1370 | "Zbigniew"   | "Dział Kadr"       | 1500  | NULL      | 2      |
 
 **dept:**
 
-| `id` | `name` | `city` |
-|---|---|---|
-| 0 | "Warszawska 14" | "Poznań" |
-| 1 | "Startowa 9" | "Warszawa" |
-| 2 | "Zabłocie 15" | "Kraków" |
+| `id` | `address`       | `city`     |
+| ---- | --------------- | ---------- |
+| 0    | "Warszawska 14" | "Poznań"   |
+| 1    | "Startowa 9"    | "Warszawa" |
+| 2    | "Zabłocie 15"   | "Kraków"   |
 
 W kolejnych rozdziałach zobaczymy, jak zbudować taką tabelę i jak czytać z niej
 dane.
