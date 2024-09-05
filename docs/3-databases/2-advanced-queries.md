@@ -21,6 +21,25 @@ W przykładach w tym rozdziale będziemy korzystać z następującej tabeli o na
 
 ## Sortowanie wyników
 
+Wyniki zapytań możemy sortować. Domyślne sortowanie jest rosnące i nie wymaga
+żadnego dodatkowego słowa kluczowych, sortowanie malejące wymaga dodatkowej
+instrukcji `DESC`:
+
+```sql
+-- Sortowanie rosnące
+SELECT id, first_name
+FROM emp WHERE sal > 1200
+ORDER BY first_name;
+
+-- Sortowanie malejące
+SELECT id, first_name
+FROM emp WHERE sal > 1200
+ORDER BY sal DESCENDING;
+```
+
+Pamiętajmy też, że klauzula `ORDER BY` jest zwykle jedną z ostatnich
+pojawiających się w zapytaniu.
+
 ## Funkcje agregujące
 
 ## Operator `AS`
