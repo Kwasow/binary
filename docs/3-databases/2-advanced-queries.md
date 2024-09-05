@@ -19,6 +19,8 @@ W przykładach w tym rozdziale będziemy korzystać z następującej tabeli o na
 | 1371 | "Weronika"   | "CEO"              | 4000  | NULL      | 2      | "pracownik"    |
 | 1372 | "Arkadiusz"  | "Programista"      | 1300  | 1369      | 1      | "pracownik123" |
 
+## Sortowanie wyników
+
 ## Funkcje agregujące
 
 ## Operator `AS`
