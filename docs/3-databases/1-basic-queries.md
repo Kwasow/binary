@@ -124,6 +124,12 @@ I wynikowa tabela to:
 | 1369     | "Aneta"          | "Startowa 9"   |
 | 1370     | "Zbigniew"       | "Zabłocie 15"  |
 
+W przykładzie widzieliśmy też, że w klauzuli `SELECT`, możemy przed nazwą pola
+podać nazwę tabeli. Jeśli wybieramy wiersze tylko z jednej tabeli, to raczej nie
+ma potrzeby, żeby to robić, ale kiedy pojawia się kilka tabel, a w szczególności
+jeżeli obie mają pola o takich samych nazwach, to powinniśmy podać nazwę tabeli,
+z której pochodzi pole.
+
 ## Modyfikowanie i tworzenie tabel
 
 Zapytania znajdujące się w tej sekcji nie są obowiązkowe na maturze i nie trzeba
