@@ -42,6 +42,44 @@ pojawiających się w zapytaniu.
 
 ## Funkcje agregujące
 
+Samo przeszukiwanie tabel w sposób efektywny i budowanie relacji między nimi jest
+bardzo ważne, ale równie ważnym elementem jest wykonywanie statystyk na podstawie
+dostępnych danych. Funkcjonalność taką udostępniają właśnie funkcje agregujące,
+których znajomość jest istotną częścią zadań maturalnych.
+
+W SQLu dostępnych jest wiele różnych funkcji agregujących, między innymi `SUM()`,
+`AVG()`, `COUNT()`, `MIN()`, `MAX()` i inne i wszystkie łączą się z grupowaniem.
+Grupowanie polega na łączeniu takich samych pól w tabeli i agregacji (przy
+pomocy funkcji) pozostałych. Zobaczmy, jak wygląda to na przykładzie, w którym
+chcemy obliczyć ile osób pracuje w departamencie pierwszym:
+
+```sql
+SELECT dept, COUNT(id)
+FROM emp
+GROUP BY dept;
+```
+
+Wynikiem zapytania jest tabela:
+
+| `dept` | `count_id` |
+| ------ | ---------- |
+| 1      | 4          |
+| 2      | 2          |
+
+Przeanalizujmy, co wydarzyło się w tym przykładzie:
+1. Wybraliśmy kolumny `dept` oraz `id` z tabeli `emp`.
+2. Włączyliśmy grupowanie po kolumnie `dept`, czyli w wynikowej tabeli wszystkie
+   wiersze o takiej samej wartości w kolumnie `dept`, zostaną złączone w jeden.
+3. Z racji tego, że pole `id` nie jest uwzględnione w grupowaniu, musieliśmy
+   wykonać na nim funkcję agregującą, w tym wypadku `COUNT()`, która policzy ile
+   (niekoniecznie różnych) wartości, pojawia się w danej `id`.
+
+Trzeci punkt jest bardzo ważny - jeśli korzystamy z agregacji, to każda kolumna
+musi albo być częścią grupowania, albo musi na niej być wykonana funkcja
+agregująca. Jeśli tego nie dopilnujemy, to baza zgłosi błąd. W klauzuli
+`GROUP BY` można podać nazwy wielu kolumn i wtedy grupowanie odbędzie się po
+unikalnych krotkach podanych pól.
+
 ## Operator `AS`
 
 W naszych zapytaniach może zdarzyć się tak, że nazwa tabeli będzie bardzo długa
@@ -53,12 +91,19 @@ albo polu tabeli. Spójrzmy na poniższy przykład:
 ```sql
 SELECT a.dept, COUNT(a.dept) AS liczba_prac
 FROM emp AS a
-WHERE liczba prac > 2
 GROUP BY a.dept
 ```
 
 W powyższym przykładzie użyliśmy operatora `AS` dwa razy - do nazwania nowej
-kolumny powstałej z agregacji i do zmiany nazwy tabeli `emp` na `a`.
+kolumny powstałej z agregacji i do zmiany nazwy tabeli `emp` na `a`. Operator
+ten pomógł tam też zmienić nazwę nadawaną automatycznie kolumnom korzystającym
+z funkcji agregujących i dlatego wynikowa tabela rożni się nieznacznie od tej
+z poprzedniego podpunktu:
+
+| `dept` | `liczba_prac` |
+| ------ | ------------- |
+| 1      | 4             |
+| 2      | 2             |
 
 ## Operator `LIKE`
 
