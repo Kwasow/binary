@@ -67,6 +67,7 @@ Wynikiem zapytania jest tabela:
 | 2      | 2          |
 
 Przeanalizujmy, co wydarzyło się w tym przykładzie:
+
 1. Wybraliśmy kolumny `dept` oraz `id` z tabeli `emp`.
 2. Włączyliśmy grupowanie po kolumnie `dept`, czyli w wynikowej tabeli wszystkie
    wiersze o takiej samej wartości w kolumnie `dept`, zostaną złączone w jeden.
