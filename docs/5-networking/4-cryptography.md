@@ -4,6 +4,7 @@ title: "Bezpieczeństwo i kryptografia"
 ---
 
 Wyróżniamy dwa typy kryptografii:
+
 - symetryczna – ten sam klucz jest znany odbiorcy i nadawcy, ten sam klucz służy
   do szyfrowania i rozszyfrowywania wiadomości,
 - klucza publicznego (asymetryczna) – wszyscy znają klucz publiczny, który służy
