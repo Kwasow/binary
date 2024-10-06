@@ -44,4 +44,3 @@ ograniczone do zakresów podanych poniżej:
 ## Network Address Translation
 
 ## Adresowanie IPv6
-
