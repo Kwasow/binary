@@ -17,6 +17,13 @@ pytaniach zamkniętych:
 - DNS - (ang. _Domain Name System_) system pozwalający tłumaczyć nazwy stron
   internetowych na adresy IP serwerów.
 
+Warto też znać i wiedzieć, co oznaczają poniższe określenia sieci:
+
+- Ethernet - sieć przewodowa,
+- WiFi - (ang. _Wireless Fidelity_) sieć bezprzewodowa,
+- LAN - (ang. _Local Area Network_) sieć lokalna,
+- WLAN - (ang. _Wireless LAN_) lokalna sieć bezprzewodowa.
+
 Dodatkowe pojęcia z zakresu sieci komputerowych, które warto znać, ale raczej
 nie pojawią się na maturze:
 
