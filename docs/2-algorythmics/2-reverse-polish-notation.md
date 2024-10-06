@@ -70,6 +70,7 @@ Z racji tego, że czytany symbol jest liczbą, to odkładamy ją na stos.
 
 Z racji tego, że czytany symbol jest operacją, to zdejmujemy dwie liczby ze
 stosu, wykonujemy operację i odkładamy wynik na stos:
+
 ```
 a = 5
 b = 8
@@ -89,6 +90,7 @@ Z racji tego, że czytany symbol jest liczbą, to odkładamy ją na stos.
 
 Z racji tego, że czytany symbol jest operacją, to zdejmujemy dwie liczby ze
 stosu, wykonujemy operację i odkładamy wynik na stos:
+
 ```
 a = 2
 b = 13
