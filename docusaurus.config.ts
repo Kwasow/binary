@@ -73,7 +73,8 @@ const config: Config = {
     },
     prism: {
       theme: lightCodeTheme as PrismTheme,
-      darkTheme: darkCodeTheme as PrismTheme
+      darkTheme: darkCodeTheme as PrismTheme,
+      additionalLanguages: ["java"]
     },
   } satisfies Preset.ThemeConfig,
 };
