@@ -5,7 +5,7 @@ title: "Odwrócona notacja polska"
 
 :::info
 
-Struktury algorytmiczne wymagane w tym rozdziale: [stos](./strucutres#stos).
+Struktury algorytmiczne wymagane w tym rozdziale: [stos](./strucutres#Stos).
 
 :::
 
