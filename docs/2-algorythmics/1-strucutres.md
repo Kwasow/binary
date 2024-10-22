@@ -30,7 +30,7 @@ Operacje dostępne w Pythonie to między innymi:
 - `remove(el)`, która usuwa pierwsze wystąpienie elementu `el` z listy (złożoność
   obliczeniowa operacji to O(n)),
 - `sort()`, która sortuje elementy na liście, zgodnie z ich naturalnym porządkiem
-  (złożoność obliczeniowa operacji to O(n*log(n))).
+  (złożoność obliczeniowa operacji to O(n\*log(n))).
 
 ## Stos
 

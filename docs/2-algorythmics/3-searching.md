@@ -49,7 +49,7 @@ def czyListaZawieraElement(lista: list[str], el: str) -> bool:
   for e in lista:
     if e == el:
       return True
-  
+
   return False
 ```
 
@@ -63,7 +63,7 @@ całej listy. Czy da się ten sam cel zrealizować lepiej?
 ## Wyszukiwanie binarne
 
 Jeśli wiemy, że będziemy wielokrotnie wyszukiwać elementy w tej samej liście, to
-może nam się opłacać posortować listę (koszt O(n*log(n))), żeby móc zastosować
+może nam się opłacać posortować listę (koszt O(n\*log(n))), żeby móc zastosować
 algorytm wyszukiwania binarnego.
 
 Wyszukiwanie binarne możemy zastosować dla każdej posortowanej listy elementów.
