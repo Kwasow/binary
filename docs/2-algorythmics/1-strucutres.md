@@ -7,14 +7,41 @@ Niektóre z poniższych struktur danych były przedstawione już wcześniej, ale
 tym rozdziale szczególną uwagę zwracamy na rodzaje operacji dostępnych na
 tych strukturach oraz ich stronę algorytmiczną.
 
+## Lista
+
+Lista, to struktura danych, którą poznaliśmy już wcześniej - jest jedną z
+podstawowych struktur danych dostępnych w każdym języku programowania, ale jej
+uniwersalne zastosowanie sprawia, że udostępnia bardzo wiele różnych operacji.
+Operacje dostępne w Pythonie to między innymi:
+
+- `operator [i]`, który pozwala na dostęp do `i`-tego elementu listy (złożoność
+  obliczeniowa operacji to O(1)),
+- `operator [a:b]`, który pozwala wydzielić część listy od indeksu `a` do
+  indeksu `b` (złożoność obliczeniowa i pamięciowa operacji to O(1), ponieważ
+  Python nie wykonuje kopii tego fragmentu listy),
+- `append(el)`, która dopisuje element `el` na koniec listy (złożoność obliczeniowa
+  i pamięciowa operacji to O(1)),
+- `insert(i, el)`, która umieszcza element `el` na pozycji o indeksie `i` i
+  przesuwa wszystkie kolejne elementy o jeden indeks w prawo (złożoność obliczeniowa
+  operacji to O(n), ponieważ trzeba przesunąć wszystkie elementy znajdujące się
+  po wstawianym indeksie),
+- `count(el)`, która oblicza ile razy element `el` pojawia się na liście (złożoność
+  obliczeniowa operacji to O(n)),
+- `remove(el)`, która usuwa pierwsze wystąpienie elementu `el` z listy (złożoność
+  obliczeniowa operacji to O(n)),
+- `sort()`, która sortuje elementy na liście, zgodnie z ich naturalnym porządkiem
+  (złożoność obliczeniowa operacji to O(n*log(n))).
+
 ## Stos
 
 Stos jest strukturą danych dużo prostszą od listy i zachowuje się tak, jak
 spodziewalibyśmy się, że działa stos. Na stosie można wykonywać tylko dwie
 operacje:
 
-- `push(el)`, czyli dołożenie elementu `el` na szczyt stosu,
-- `pop()`, czyli zdjęcie elementu ze szczytu stosu.
+- `push(el)`, czyli dołożenie elementu `el` na szczyt stosu (złożoność
+  obliczeniowa i pamięciowa operacji to O(1)),
+- `pop()`, czyli zdjęcie elementu ze szczytu stosu (złożoność obliczeniowa i
+  pamięciowa operacji to O(1)).
 
 Stos zawsze rośnie do góry i nie można dostać się do innych elementów niż ten na
 szczycie stosu, inaczej niż zdejmując kolejne elementy ze szczytu.
