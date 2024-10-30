@@ -104,15 +104,15 @@ Wyszukiwanie binarne można w Pythonie zaimplementować przy pomocy rekurencji:
 ```Python showLineNumbers
 def znajdzBinarnie(lista: list[str], el: str) -> bool:
   dlugosc: int = len(el) # Zakłdamy, że długość > 0
-  polowa: int = dlugosc / 2
+  polowa: int = dlugosc // 2 # Musimy zastosować dzielenie całkowite
 
   if lista[polowa] == el:
     # Znaleźliśmy szukany element
     return True
-  if lista[polowa] < el:
+  if lista[polowa] > el:
     # Wykonaj to samo dla lewej połowy listy
     return znajdzBinarnie(lista[:polowa], el)
-  if lista[polowa] > el:
+  if lista[polowa] < el:
     # Wykonaj to samo dla prawej połowy listy
     return znajdzBinarnie(lista[(polowa + 1):], el)
 ```
