@@ -92,3 +92,47 @@ W przykładach stos zawsze będziemy opisywali w następujący sposób:
 
 Symbol `-|` oznacza spód stosu, a potem po kolei wymienione są elementy na
 stosie. Element najbardziej z prawej strony jest elementem na wierzchu stosu.
+
+## Zbiór
+
+Zbiór to struktura przechowująca dane podobna do worka - można umieścić w niej
+elementy, ale w przeciwieństwie do listy, nie znajdują się w nim w żadnej
+określonej kolejności. Dodatkową cechą zbioru jest to, że każdy element może
+znajdować się w nim tylko jeden raz, co oznacza, że włożenie do zbioru dwóch
+jedynek jest równoważne włożeniu tylko jednej. Typ zbioru w Pythonie to `set` i
+jest to, podobnie do listy, typ parametryzowany.
+
+Różnicę między zbiorem, a listą zilustruje poniższy przykład:
+
+```python showLineNumbers
+# Pusty zbiór i pusta lista
+zbior: set[int] = set()
+lista: list[int] = []
+
+# Dodajemy dwa razy ten sam element
+zbior.add(1)
+zbior.add(1)
+
+lista.append(1)
+lista.append(1)
+
+# Wypisujemy zawartość
+print(zbior) # Wypisuje: {1}
+print(lista) # Wypisuje: [1, 1]
+```
+
+Zbiór udostępnia między innymi następujące operacje:
+
+- `set()` - konstruktor pustego zbioru,
+- `len(s)` - sprawdzenie liczby elementów w zbiorze `s`,
+- `s.add(el)` - dodaj element `el` do zbioru `s`,
+- `s.remove(el)` - usuń element `el` ze zbioru (jego brak spowoduje błąd),
+- `s.discard(el)` - usuń element `el` ze zbioru, jeśli istnieje.
+
+Ponadto dostępne są następujące operacje związane ze sprawdzaniem zawartości zbiorów:
+
+- `el in s` - sprawdzenie, czy element `el` znajduje się w zbiorze `s`,
+- `s1 >= s2` - sprawdzenie, czy wszystkie elementy `s2` znajdują się w `s2`,
+- `s1 | s2` - suma zbiorów `s1` i `s2`,
+- `s1 & s2` - przecięcie zbiorów `s1` i `s2`,
+- `s1 - s2` - różnica zbiorów `s1` i `s2`.
