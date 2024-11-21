@@ -20,7 +20,7 @@ def dzielniki(n: int) -> list[int]:
   for i in range(1, n + 1):
     if n % i == 0:
       wynik.append(i)
-    
+
   return wynik
 ```
 
@@ -58,7 +58,7 @@ def dzielniki(n: int) -> list[int]:
     if n % i == 0:
       wynik.append(i)
       wynik.append(n // i)
-    
+
   return wynik
 ```
 
@@ -82,7 +82,7 @@ def czynniki(n: int) -> list[int]:
     while n % i == 0:
       wynik.append(i)
       n = n // i
-    
+
   return wynik
 ```
 
@@ -118,11 +118,11 @@ def czy_pierwsza(n: int) -> bool:
   # Nie sprawdzamy pierwszości dla liczb ujemnych oraz 0, 1
   if n < 2:
     return False
-  
+
   for i in range(2, math.ceil(math.sqrt(n))):
     if n % i == 0:
       return False
-  
+
   return True
 ```
 
