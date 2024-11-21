@@ -106,7 +106,7 @@ Różnicę między zbiorem, a listą zilustruje poniższy przykład:
 
 ```python showLineNumbers
 # Pusty zbiór i pusta lista
-zbior: set[int] = set()
+zbior: set[int] = {}
 lista: list[int] = []
 
 # Dodajemy dwa razy ten sam element
@@ -123,7 +123,7 @@ print(lista) # Wypisuje: [1, 1]
 
 Zbiór udostępnia między innymi następujące operacje:
 
-- `set()` - konstruktor pustego zbioru,
+- `set()` lub `{}` - konstruktor pustego zbioru,
 - `len(s)` - sprawdzenie liczby elementów w zbiorze `s`,
 - `s.add(el)` - dodaj element `el` do zbioru `s`,
 - `s.remove(el)` - usuń element `el` ze zbioru (jego brak spowoduje błąd),
