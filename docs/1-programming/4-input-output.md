@@ -143,26 +143,25 @@ następnie odczytać przy pomocy funkcji jednej z trzech funkcji:
 - `readlines` - zwraca listę napisów, z których każdy zawiera jedną linijkę z
   pliku.
 
-Często najwygodniejsza będzie dla nas funkcja `readlines()`. W praktyce jej
-wykorzystanie będzie wyglądało w ten sposób:
+Często najwygodniejsza będzie dla nas funkcja `read()` w połączeniu z funkcją
+`split()`. W praktyce ich wykorzystanie będzie wyglądało w ten sposób:
 
 ```python showLineNumbers
 plik = open("nazwiska.txt")
-nazwiska: list[str] = plik.readlines()
+# Jeśli plik, który otworzylismy powstał w systemie Windows, a nie macOS/Linux,
+# to zamiast "\n" powinniśmy skorzystać z "\r\n".
+nazwiska: list[str] = plik.read().split("\n")
 print(nazwiska)
 ```
 
 Powyższy program powinien na wyjście standardowe wypisać:
 
 ```python
-# W systemie Windows
-['Jan Nowak\r\n', 'Anna Kowalska\r\n', 'Marzena Wiśniewska\r\n', 'Kamil Wójcik\r\n']
-# W systemie Linux/macOS
-['Jan Nowak\n', 'Anna Kowalska\n', 'Marzena Wiśniewska\n', 'Kamil Wójcik\n']
+['Jan Nowak', 'Anna Kowalska', 'Marzena Wiśniewska', 'Kamil Wójcik']
 ```
 
-Więcej o tym, jak korzystać z pozostałych funkcji jak i z funkcji `readlines()`
-będzie po wprowadzeniu do naszego programu [pętli](./6-loops.md).
+Więcej o tym, jak korzystać z pozostałych funkcji będzie po wprowadzeniu do
+naszego programu [pętli](./6-loops.md).
 
 ## Pobieranie argumentów programu
 
