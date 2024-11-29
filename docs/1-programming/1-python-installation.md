@@ -5,14 +5,14 @@ title: "Instalacja Pythona"
 
 Jeśli korzystamy z systemu operacyjnego Windows, to Python nie jest domyślnie
 zainstalowany i będziemy musieli go zainstalować. W większości dystrybucji
-Linuxa Python jest zainstalowany domyślnie, ale zintegorwane środowisko
+Linuxa Python jest zainstalowany domyślnie, ale zintegrowane środowisko
 programistyczne i tak nam się przyda.
 
 ## Zintegorwane środowisko programistyczne (IDE)
 
 IDE to (zwykle graficzny) program przeznaczony do programowania. Zawiera nie
 tylko sam edytor kodu programu, ale także zestaw przydatnych narzędzi,
-spośród których wyróżnić można wiersz poleceń (terminal) i debuger.
+spośród których wyróżnić można wiersz poleceń (terminal) i debugger.
 
 Czasami IDE współpracują z wieloma różnymi językami (np. Visual Studio Code),
 a czasami są przeznaczone do pracy z konkretnym językiem (np. PyCharm został
@@ -34,7 +34,7 @@ zainstaluje odpowiednią wersję na swój użytek.
 
 Na Windowsie możemy zainstalować PyCharma z jego [strony internetowej](https://www.jetbrains.com/pycharm/).
 
-Na Linuxie najłatwiej będzie skorzystać z pakietu dostępnego w menagerze pakietów
+Na Linuxie najłatwiej będzie skorzystać z pakietu dostępnego w menadżerze pakietów
 [snap](https://snapcraft.io/pycharm-community).
 
 W obu systemach możemy też skorzystać z narzędzia [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/),
