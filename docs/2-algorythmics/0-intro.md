@@ -34,7 +34,7 @@ def find_max(l: list[int]) -> int:
   for e in l:
     if e > current_max:
       current_max = e
-  
+
   return current_max
 ```
 
@@ -67,14 +67,14 @@ def list_rev_1(l: list[int]) -> list[int]:
     tmp: int = l[i]
     l[i] = l[length - i - 1]
     l[length - i - 1] = tmp
-  
+
   return l
 
 def list_rev_2(l: list[int]) -> list[int]:
   res: list[int] = []
   for e in l:
     res.append(e)
-  
+
   return res
 ```
 
@@ -98,8 +98,8 @@ Różnice widać bardzo wyraźnie na wykresie:
 
 ![Wykres porównujący różne funkcje](../../static/img/docs/complexities.png)
 
-
 Od wykresu najbliższego osi OX są to:
+
 - `O(1)` - czas/pamięć stała (brak na wykresie)
 - `O(log(n))` - czas/pamięć logarytmiczna (niebieski)
 - `O(sqrt(n))` - czas/pamięć pierwiastkowa (czerwony)
