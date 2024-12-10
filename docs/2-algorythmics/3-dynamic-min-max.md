@@ -19,9 +19,39 @@ metody programowania dynamicznego.
 
 ## Algorytm dynamiczny
 
+Gdybyśmy mieli sami znaleźć najmniejszy element na liście, która ma bardzo dużo
+elementów (np. lista tak długa, że po wydrukowaniu zajmuje kilka stron A4), to
+pewnie przeglądalibyśmy po kolei elementy i pamiętalibyśmy w głowie, jaka była
+najmniejsza wartość, jaką widzieliśmy do tej pory. Dokładnie tak samo możemy
+zrobić w programowaniu i nazywamy to programowaniem dynamicznym, ponieważ pamiętamy
+dynamiczną wartość, która jest najlepszym do tej pory znalezionym wynikiem.
+
+Zobaczmy poniższy algorytm:
+
 ```python showLineNumbers
 lista: list[int] = [1, 17, 4, 19, 2, 1, 99, 82, 46]
+
+def min_dyn(l: list[int]) -> int:
+  res: int = None
+
+  for el in l:
+    if res == None or el < res:
+      res = el
+
+  return res
 ```
+
+Na początku tworzymy sobie zmienną `res`, która będzie naszą pamięcią przechowującą
+najlepszy znaleziony wynik. Potem w pętli iterujemy się po kolei po wszystkich
+elementach listy i za każdym razem porównujemy element do aktualnie najlepszego
+wyniku.
+
+Alternatywnie, moglibyśmy w tym algorytmie zamiast początkowej wartości wyniku
+`None` zastosować:
+- `-1`, jeśli szukamy elementu największego w liście, w której znajdują się tylko
+  liczby nieujemne,
+- `l[0]`, czyli pierwszego elementu listy, jeśli wcześniej sprawdzimy, że nie
+  jest pusta.
 
 ## Algorytm rekurencyjny
 
