@@ -48,6 +48,7 @@ wyniku.
 
 Alternatywnie, moglibyśmy w tym algorytmie zamiast początkowej wartości wyniku
 `None` zastosować:
+
 - `-1`, jeśli szukamy elementu największego w liście, w której znajdują się tylko
   liczby nieujemne,
 - `l[0]`, czyli pierwszego elementu listy, jeśli wcześniej sprawdzimy, że nie
