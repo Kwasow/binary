@@ -22,3 +22,18 @@ metody programowania dynamicznego.
 ## Algorytm rekurencyjny
 
 ## Algorytm wykorzystujący sortowanie
+
+Możemy sobie też wyobrazić algorytm, który działa w czasie stałym `O(1)` na
+posortowanej liście, lub samym kosztem sortowania w przypadku dowolnej listy.
+Może być to przydatne w sytuacji, w której i tak potrzebujemy posortowanej listy.
+
+Algorytm o koszcie `O(n*log(n))` wykorzystujący funkcję `sort()` z biblioteki
+Pythona wygląda następująco:
+
+```python showLineNumbers
+lista: list[int] = [1, 17, 4, 19, 2, 1, 99, 82, 46]
+
+lista.sort()
+minimum: int = lista[0]
+maximum: int = lista[-1]
+```
