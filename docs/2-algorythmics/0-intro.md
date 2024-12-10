@@ -82,10 +82,31 @@ Algorytmy te wyglądają dosyć podobnie, ale pierwszy działa w pamięci stałe
 ponieważ odwraca elementy na liście, którą dostał. Zwróćmy uwagę, że pomimo że
 funkcja `list_rev_1()` zwraca listę, to jest to ta sama lista, co lista wejściowa
 i nie wymagała zajęcia żadnej dodatkowej pamięci.
-ə
+
 Drugi algorytm działa w pamięci liniowej, ponieważ jeśli długość listy wejściowej
 oznaczymy jako `n`, to musimy stworzyć nową listę o długości `n`. Zużyliśmy więc
 dodatkową pamięć równą `O(n)` na stworzenie nowej listy tej samej długości.
+
+### Złożoność pamięciowa w rekurencji
+
+Należy pamiętać, że każde wywołanie funkcji wymaga stałej pamięci `O(1)` między
+innymi dlatego, że konieczne jest odłożenie wywołania funkcji na stos wywołań.
+Jeżeli więc stosujemy algorytmy rekurencyjne, to złożoność pamięciowa będzie
+też zależała od liczby wywołań rekurencyjnych.
+
+Poniższa funkcja oblicza `n`-tą potęgę dwójki przy pomocy rekurencji. Żeby obliczyć
+`n`-tą potęgę musimy wykonać `n` wywołań rekurencyjnych. Skoro koszt pojedynczego
+wywołania to `O(1)`, to złożoność całego algorytmu to `O(n)`.
+
+```python showLineNumbers
+def pow2(n: int) -> int:
+  if n < 0:
+    return -1
+  if n == 0:
+    return 1
+  else:
+    return 2 * pow2(n - 1)
+```
 
 ## Nazewnictwo
 

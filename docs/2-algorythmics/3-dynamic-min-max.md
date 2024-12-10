@@ -19,7 +19,29 @@ metody programowania dynamicznego.
 
 ## Algorytm dynamiczny
 
+```python showLineNumbers
+lista: list[int] = [1, 17, 4, 19, 2, 1, 99, 82, 46]
+```
+
 ## Algorytm rekurencyjny
+
+Ciekawym algorytmem pozwalającym na znalezienie elementu najmniejszego/największego
+jest algorytm rekurencyjny, korzystający z funkcji `min()` lub `max()` wybierające
+mniejszy/większy element z dwóch liczb. Ten algorytm działa, tak samo jak
+poprzedni, w czasie `O(n)`, ale wykorzystuje też liniową pamięć. Pamięć liniowa
+wynika tutaj z konieczności wykonania `n` wywołań rekurencyjnych.
+
+```python showLineNumbers
+lista: list[int] = [1, 17, 4, 19, 2, 1, 99, 82, 46]
+
+def min_rec(l: list[int]) -> int:
+  if len(l) == 0:
+    return -1
+  if len(l) == 1:
+    return l[0]
+  else:
+    return min(l[0], min_rec(l[1:]))
+```
 
 ## Algorytm wykorzystujący sortowanie
 
