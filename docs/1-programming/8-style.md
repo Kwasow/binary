@@ -54,6 +54,7 @@ else:
 ```
 
 W powyższym programie warto zwrócić uwagę na następujące elementy:
+
 - funkcje nazywamy małymi literami, a między słowami stosujemy podkreśliniki,
 - między nazwą funkcji, a nawiasami nie zostawiamy spacji,
 - argumenty funkcji oddzielamy spacją zarówno przy deklaracji jak i wywołaniu,
