@@ -29,16 +29,16 @@ Najpopularniejsze IDE to:
 
 Przy zdawaniu matury z wybranym językiem programowania Python zalecam korzystanie
 z PyCharma, który oferuje szeroki zestaw przydatnych funkcji i jest wygodny
-w użyciu. Ułatwia też instalację Pythona w Windowsie, ponieważ sam pobierze i
-zainstaluje odpowiednią wersję na swój użytek.
+w użyciu.
 
-Na Windowsie możemy zainstalować PyCharma z jego [strony internetowej](https://www.jetbrains.com/pycharm/).
-
-Na Linuxie najłatwiej będzie skorzystać z pakietu dostępnego w menadżerze pakietów
-[snap](https://snapcraft.io/pycharm-community).
-
+Na Windowsie możemy zainstalować PyCharma z jego [strony internetowej](https://www.jetbrains.com/pycharm/). Na Linuxie najłatwiej będzie skorzystać z pakietu
+dostępnego w menadżerze pakietów [snap](https://snapcraft.io/pycharm-community).
 W obu systemach możemy też skorzystać z narzędzia [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/),
 które jest zupełnie niezależne od jakichkolwiek menadżerów pakietów.
+
+Do tego musimy też zainstalować interpreter Pythona - na Windowsie najwygodniej
+dostać go ze Sklepu Microsoft (np. "Python 3.12") a na Linuxie skorzystamy
+z odpowiedniego menadżera pakietów.
 
 Po zainstalowaniu PyCharma i utworzeniu nowego projektu z domyślnymi ustawieniami,
 powinniśmy zobaczyć interfejs podobny do tego poniżej:
