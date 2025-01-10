@@ -45,6 +45,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'informatyka, programowanie, matura, python, sql, bazy danych'
+      }
+    ],
     navbar: {
       title: siteName,
       logo: {
