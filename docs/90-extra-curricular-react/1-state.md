@@ -46,6 +46,9 @@ znaczniki (elementy) to:
 Komponenty mogą też przyjmować argumenty, tak jak zwykłe funkcje:
 
 ```ts
+// Ten przykład nie jest do końca poprawny i raczej nie zadziała. Dokładny
+// sposób przekazywania argumentów zostanie przedstawiony w rozdziale
+// Kółko i Krzyżyk > Przekazywanie argumentów przez props
 function Article(title: string, body: string) {
   return <div>
     <h1>{title}</h1>

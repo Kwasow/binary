@@ -93,7 +93,7 @@ jest modyfikacją innego, już zmodyfikowanego komponentu. Zauważmy, że nie mu
 po raz kolejny definiować koloru tekstu, ponieważ jest on _dziedziczony_ z komponentu
 `WhiteText`.
 
-Dzieje się tak zgodnie z nazwą CSS, czyli **cascading** _style sheet_ - style
+Dzieje się tak zgodnie z nazwą CSS, czyli _**cascading** style sheet_ - style
 nakładane są kaskadowo. Jeśli w komponencie "niższym" nadpiszemy któryś atrybut
 z komponentu "wyższego", to zostanie zastosowany ten niższy. Jeśli komponent
 "niższy" nie ma jakiegoś atrybutu, to dziedziczy go z komponentu "wyższego".
