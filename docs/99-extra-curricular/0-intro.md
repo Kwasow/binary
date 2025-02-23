@@ -10,6 +10,7 @@ jej rozszerzenia, jakim jest react-native, można także tworzyć aplikacje
 mobilne.
 
 Nauczymy się także korzystać z różnych narzędzi informatycznych, takich jak:
+
 - menadżery pakietów: `npm`, `yarn`,
 - środowiska programistyczne: VS Code,
 - synchronizacja kodu przy pomocy narzędzia `git` oraz jego zastosowanie w
@@ -145,6 +146,7 @@ projekt zgodnie z instrukcją z poprzedniego podpunktu, a nastepnie przejść
 dalej. Projekt znajduje się w katalogu `template/`
 
 Aby otworzyć projekt w edytorze VS Code, możemy:
+
 - **na Linuxie** otworzyć program VS Code a następnie wybrać `Plik` > `Otwórz folder`
 - **na Windowsie z WSL** otworzyć `Ubuntu`, następnie wejść do odpowiedniego
   katalogu i wpisać `code .` - spowoduje to otwarcie aktualnego katalogu w edytorze
@@ -154,12 +156,14 @@ Aby otworzyć projekt w edytorze VS Code, możemy:
 
 Nawigacja po plikach i katalogach w terminalu jest możliwa dzięki poniższym
 poleceniom:
-- `pwd` - (od *print work directory*) wypisuje ścieżkę do katalogu, w którym
+
+- `pwd` - (od _print work directory_) wypisuje ścieżkę do katalogu, w którym
   aktualnie się znajdujemy,
 - `ls` - wypisuje pliki i foldery w aktualnym katalogu,
 - `cd [nazwa]` - wchodzi do podanego katalogu.
 
 Dodatkowo:
+
 - `.` oznacza aktualny katalog,
 - `..` - oznacza katalog wyżej.
 
@@ -170,6 +174,7 @@ Dodatkowo:
 Plik `package.json` znajduje się zawsze w katalogu głównym projektu i go opisuje.
 Opisany jest w formacie JSON, w którym najważniejsze są dla nas wartości zapisane
 jako:
+
 - `name` - nazwa projektu,
 - `scripts` - definicje poleceń, które można wykonać wewnątrz projektu,
 - `dependencies` - lista zależności (bibliotek), z których korzysta projekt,
@@ -182,7 +187,7 @@ dla nas istotne.
 ### Menadżer pakietów `npm`
 
 `npm` to program, który jest częścią pakietu `nodejs`, który zainstalowaliśmy
-wcześniej. Jego nazwa to skrót od *node package manager*. Pozwala on na zarządzanie
+wcześniej. Jego nazwa to skrót od _node package manager_. Pozwala on na zarządzanie
 zależnościami i wykonywanie poleceń zdefiniowanych w `package.json` pod kluczem
 `scripts`.
 
@@ -194,6 +199,7 @@ npm install
 ```
 
 Po wykonaniu tego polecenia powstanie plik i katalog:
+
 - plik `package-lock.json` - jego treść jest z początku podobna do `package.json`,
   jednak w którymś momencie zaczynają się pojawiać nowe elementy - definicje
   konkretnych zależności, które zostały zainstalowane, wraz z ich konkretnymi
@@ -240,6 +246,7 @@ projektem, np. zdjęcia, dokumenty czy zawartość audio.
 
 **Katalog `app`**, w którym znajduje się kod naszej strony internetowej. Możemy
 zwrócić szczególną uwagę na pliki:
+
 - `app/routes.tsx`, w którym zdefiniowane są ścieżki naszej strony internetowej
   (na razie jest to tylko jedna ścieżka główna `index`),
 - `app/routes/home.tsx`, w którym zdefiniowany jest jeden domyślny widok `Home`,
