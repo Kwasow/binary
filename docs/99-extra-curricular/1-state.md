@@ -1,4 +1,4 @@
 ---
 sidebar_position: 2
-title: "Stan widoku"
+title: "Widoki i stan"
 ---
