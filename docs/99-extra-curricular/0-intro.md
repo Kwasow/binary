@@ -233,10 +233,10 @@ tego użyć polecenia `install`, np.:
 
 ```bash
 # Aby zainstalować bibliotekę styled-components
-npm install styled-components
+npm add styled-components
 # Aby zainstalować narzędzie do automatycznego formatowania kodu, w sekcji
 # devDependencies w pliku `package.json`
-npm install --save-dev prettier
+npm add --save-dev prettier
 ```
 
 ### Pozostałe pliki

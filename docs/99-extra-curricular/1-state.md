@@ -34,7 +34,7 @@ function Article() {
 
 Komponenty mogą zwracać tylko jeden element, więc jeśli chcemy zwrócić kilka
 elementów, to musimy je opakować w pudełko. Zastosowane w tym przykładzie
-elementy to:
+znaczniki (elementy) to:
 
 - `<div>` - zwykłe pudełko, grupujące kilka elementów; domyślnie wyświetla
   elementy (swoje dzieci) jedno pod drugim,
