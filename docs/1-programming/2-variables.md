@@ -114,7 +114,7 @@ wyniki tych sprawdzeń:
 - `czyPitagoras` - w linijce 5 obliczamy dwie wartości (zobaczyć to pomagają
   nam nawiasy, ale nie są one konieczne), a następnie sprawdzamy czy wyniki
   obu obliczeń są takie same; zwróćmy szczególną uwagę na fakt, że równość
-  sprawdzamy podówjnym znakiem `=` - wynika to z tego, że znak `=` oznacza już
+  sprawdzamy podwójnym znakiem `=` - wynika to z tego, że znak `=` oznacza już
   przypisanie wartości do zmiennej
 - `aMniejszeC` - w linijce 6 porównujemy dwie zmienne i sprawdzamy czy `a` jest
   mniejsze od `c`

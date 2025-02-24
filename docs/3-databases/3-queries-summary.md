@@ -8,7 +8,7 @@ Rzeczy, o których warto pamiętać, żeby było nam wygodniej czytać SQLa:
 - klauzule zapisujemy wielkimi literami, a nazwy kolumn i tabel małymi,
 - zaczynamy kolejne części zapytania od nowych linijek.
 
-Pamiętajmy też, że użycie funkcji agregujących wymaga skorzystania z kaluzuli
+Pamiętajmy też, że użycie funkcji agregujących wymaga skorzystania z klauzuli
 `GROUP BY`, a kolejność klauzul w zapytaniu musi się zawsze zgadzać:
 
 ```sql

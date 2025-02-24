@@ -86,7 +86,7 @@ podzielony2: list[str] = napis.split("a")
 # ["Al", " m", " kot", ""]
 ```
 
-Na napisach można też wykonywać niektóre operacje "arytemtyczne", na przykład:
+Na napisach można też wykonywać niektóre operacje "arytmetyczne", na przykład:
 
 ```python showLineNumbers
 napis1: str = "test "
@@ -116,7 +116,7 @@ na porównaniu wartości liczbowej każdego znaku po kolei.
 Większość języków programowania dzieli liczby na dwie grupy:
 
 - liczby całkowite (ang. _integer_) - w Pythonie jest to typ `int`
-- liczby zmienno przecinkowe (ang. _floating-point_ albo _double precision_),
+- liczby zmiennoprzecinkowe (ang. _floating-point_ albo _double precision_),
   czyli niecałkowite, posiadające część dziesiętną - w Pythonie jest to typ
   `float`
 

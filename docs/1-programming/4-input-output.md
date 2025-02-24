@@ -135,7 +135,7 @@ standardem UNIX (np. Linux albo macOS) to jest to `\n`.
   końcu pliku, w przypadku braku pliku zostaje stworzony nowy
 
 Do czytania z pliku wystarczy nam dostęp w trybie tylko do odczytu, czyli `r`.
-Funkcja `open()` zwraca nam obiekt reprezentujący otwarty plik. Możeny z niego
+Funkcja `open()` zwraca nam obiekt reprezentujący otwarty plik. Możemy z niego
 następnie odczytać przy pomocy funkcji jednej z trzech funkcji:
 
 - `read` - odczytuje cały plik i zwraca go jako napis,

@@ -8,7 +8,7 @@ zainstalowany i będziemy musieli go zainstalować. W większości dystrybucji
 Linuxa Python jest zainstalowany domyślnie, ale zintegrowane środowisko
 programistyczne i tak nam się przyda.
 
-## Zintegorwane środowisko programistyczne (IDE)
+## Zintegrowane środowisko programistyczne (IDE)
 
 IDE to (zwykle graficzny) program przeznaczony do programowania. Zawiera nie
 tylko sam edytor kodu programu, ale także zestaw przydatnych narzędzi,
@@ -23,7 +23,7 @@ Najpopularniejsze IDE to:
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Eclipse](https://www.eclipse.org/downloads/) - raczej wychodzi już z użycia
-- wiele różnych IDE firmy [JetBrains](https://www.jetbrains.com/ides/) (Intelij IDEA, PyCharm i inne)
+- wiele różnych IDE firmy [JetBrains](https://www.jetbrains.com/ides/) (Intellij IDEA, PyCharm i inne)
 
 ## PyCharm
 
@@ -48,7 +48,7 @@ powinniśmy zobaczyć interfejs podobny do tego poniżej:
 Niewykluczone, że w pustym projekcie nie będzie pliku `main.py`. Musimy go
 wtedy utworzyć sami klikając prawym przyciskiem myszy na katalogu głównym
 projektu (w tym wypadku `pythonProject`) i wybierając nowy plik Python.
-Konsola (interpreter Pythona) w dolnej części ekarnu również może nie być
+Konsola (interpreter Pythona) w dolnej części ekranu również może nie być
 domyślnie otwarta, więc możemy ją otworzyć klikając logo Pythona widoczne na
 pasku z lewej strony (na zrzucie ekranu podświetlone na szaro).
 
