@@ -67,7 +67,7 @@ nieskończoność:
 :::warning
 
 Ten program będzie wykonywał się w nieskończoność. Jeśli chcemy przerwać jego
-wykonanie, to możemy skorystać z czerwonego przycisku zatrzymania w PyCharmie,
+wykonanie, to możemy skorzystać z czerwonego przycisku zatrzymania w PyCharmie,
 który znajduje się obok zielonego przycisku "play". Alternatywnie możemy
 użyć skrótu klawiszowego `Ctrl-C` w okienku, w którym wykonuje się program.
 
@@ -188,7 +188,7 @@ Instrukcja `continue` powoduje zatrzymanie wykonywania **aktualnej** iteracji
 pętli i rozpoczyna wykonanie kolejnej iteracji, dlatego w powyższym przykładzie
 nie są wypisywane liczby parzyste.
 
-Intrukcja `break` powoduje całkowite zatrzymanie **całego** wykonania pętli,
+Instrukcja `break` powoduje całkowite zatrzymanie **całego** wykonania pętli,
 dlatego nie zostają wypisane wartości większe od 5.
 
 ## Inne sposoby iteracji
@@ -224,7 +224,7 @@ do {
 
 Już sam zapis treści pętli `do-while`sugeruje jej działanie - pętla najpierw
 jest wykonywana w całości, a potem dopiero sprawdzany jest warunek. Oznacza to,
-że w przeciwnieństwie do pętli `while`, treść pętli `do-while` zawsze zostanie
+że w przeciwieństwie do pętli `while`, treść pętli `do-while` zawsze zostanie
 wykonana przynajmniej raz.
 
 Pętla `do-while` nie jest często spotykaną konstrukcją, ale są pewne problemy,

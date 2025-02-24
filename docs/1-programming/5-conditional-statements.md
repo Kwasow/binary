@@ -4,7 +4,7 @@ title: "Instrukcje warunkowe"
 ---
 
 Nasze programy nie będą zbyt przydatne, jeżeli będą mogły wykonywać się tylko
-od początku do końca, bez podejmowania żadnych deyzji. Mechanizm, który pozwala
+od początku do końca, bez podejmowania żadnych decyzji. Mechanizm, który pozwala
 naszym programom zachowywać się inaczej, w zależności od danych, które otrzyma,
 to instrukcje warunkowe. W Pythonie (i większości współczesnych języków
 programowania) dostępne są instrukcja `if` oraz `match` (w wielu innych językach

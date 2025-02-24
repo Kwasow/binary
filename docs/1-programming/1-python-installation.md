@@ -48,7 +48,7 @@ powinniśmy zobaczyć interfejs podobny do tego poniżej:
 Niewykluczone, że w pustym projekcie nie będzie pliku `main.py`. Musimy go
 wtedy utworzyć sami klikając prawym przyciskiem myszy na katalogu głównym
 projektu (w tym wypadku `pythonProject`) i wybierając nowy plik Python.
-Konsola (interpreter Pythona) w dolnej części ekarnu również może nie być
+Konsola (interpreter Pythona) w dolnej części ekranu również może nie być
 domyślnie otwarta, więc możemy ją otworzyć klikając logo Pythona widoczne na
 pasku z lewej strony (na zrzucie ekranu podświetlone na szaro).
 
