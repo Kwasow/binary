@@ -23,7 +23,7 @@ Najpopularniejsze IDE to:
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Eclipse](https://www.eclipse.org/downloads/) - raczej wychodzi już z użycia
-- wiele różnych IDE firmy [JetBrains](https://www.jetbrains.com/ides/) (Intelij IDEA, PyCharm i inne)
+- wiele różnych IDE firmy [JetBrains](https://www.jetbrains.com/ides/) (Intellij IDEA, PyCharm i inne)
 
 ## PyCharm
 
