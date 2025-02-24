@@ -8,7 +8,7 @@ zainstalowany i będziemy musieli go zainstalować. W większości dystrybucji
 Linuxa Python jest zainstalowany domyślnie, ale zintegrowane środowisko
 programistyczne i tak nam się przyda.
 
-## Zintegorwane środowisko programistyczne (IDE)
+## Zintegrowane środowisko programistyczne (IDE)
 
 IDE to (zwykle graficzny) program przeznaczony do programowania. Zawiera nie
 tylko sam edytor kodu programu, ale także zestaw przydatnych narzędzi,
