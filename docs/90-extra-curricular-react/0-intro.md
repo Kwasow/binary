@@ -108,6 +108,22 @@ sudo apt install nodejs
 node -v
 ```
 
+### macOS
+
+W systemie macOS najłatwiej zainstalować `nodejs` przy pomocy menadżera pakietów
+`brew`.
+
+Instalacja `brew` opisana jest na stronie [https://brew.sh/](https://brew.sh/).
+
+Następnie wystarczy wykonać polecenie:
+
+```sh
+# 1. Instalacja z menadżera pakietów brew
+brew install node
+# 2. Sprawdzamy, czy wszystko poprawnie się zainstalowało:
+node -v
+```
+
 ### Inny Linux
 
 W przypadku jeżeli korzystamy z innej wersji Linuxa niż Ubuntu, należy zainstalować
