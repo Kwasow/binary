@@ -92,4 +92,63 @@ uruchomiliśmy stronę.
 W jednym pliku, może być zdefiniowanych wiele komponentów (funkcji), skąd
 więc `react-router` wie, który komponent ma wyświetlić jako główny?
 
+W JavaScriptcie i TypeScriptcie możemy definiować dowolnie wiele funkcji w
+jednym pliku i korzystać z nich wewnątrz tego pliku. Jeśli chcemy umożliwić
+korzystanie z jakiejś funkcji w innym pliku, to musimy ją wyeksportować przy
+pomocy słowa kluczowego `export`:
+
+```ts
+// Plik: app/routes/isEven.ts
+export function isEven(num: number) {
+  return num % 2 == 0
+}
+```
+
+Możemy z niej wtedy skorzystać w innym pliku importując ją:
+
+```ts
+// Plik: app/routes/isOdd.ts
+import { isEven } from './isEven.ts'
+
+function isOdd(num: number) {
+  return !isEven(num)
+}
+```
+
+Z każdego pliku można wyeksportować dowolnie wiele funkcji, jednak można
+utworzyć tylko jeden eksport domyślny:
+
+```ts
+// Plik: app/routes/isEven2.ts
+export default function isEven(num: number) {
+  return num % 2 == 0
+}
+```
+
+Funkcja taka eksportowana jest bez nazwy, to znaczy, że korzystający z niej
+programista sam nadaje jej nazwę korzystając z niej w ten sposób:
+
+```ts
+// Plik: app/routes/isOdd2.ts
+import isEvenFromOtherFile from './isEven2.ts'
+
+function isOdd(num: number) {
+  return !isEvenFromOtherFile(num)
+}
+```
+
+Zauważmy, że w przypadku eksportów domyślnych nie stosuje się nawiasów
+klamrowych przy instrukcji `import`. W powyższym przykładzie zmieniliśmy też
+nazwę funkcji `isEven` podczas importu. Aby nawigacja przy pomocy `react-router`
+działała poprawnie, musimy w pliku implementującym ścieżkę umieścić właśnie
+taki eksport domyślny - to on będzie wyświetlony jako główny widok na stronie.
+
 ## Nawigacja do innej strony
+
+## Parametry
+
+Każdej ścieżce można też przekazać parametry - możemy na przykład chcieć
+wyświetlić imię osoby otwierającej stronę o adresie
+`http://localhost:5173/secondary?name=Karol`. O tym, jak uzyskać argument
+`name` można przeczytać w [dokumentacji](https://reactrouter.com/home) projektu
+`react-router`.
