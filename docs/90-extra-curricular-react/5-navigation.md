@@ -28,10 +28,10 @@ wybieranych opcji.
 Ścieżką będziemy nazywać ciąg znaków, który znajduje się po nazwie domeny, np.
 dla strony Startowej moglibyśmy zdefiniować następujące ścieżki:
 
-| **Adres** | **Domena** | **Ścieżka** |
-| --------- | ---------- | ----------- |
-| `https://startowa.edu.pl` | `startowa.edu.pl` | `/` |
-| `https://startowa.edu.pl/godziny-lekcji/` | `startowa.edu.pl` | `/godziny-lekcji` |
+| **Adres**                                                                | **Domena**        | **Ścieżka**                                      |
+| ------------------------------------------------------------------------ | ----------------- | ------------------------------------------------ |
+| `https://startowa.edu.pl`                                                | `startowa.edu.pl` | `/`                                              |
+| `https://startowa.edu.pl/godziny-lekcji/`                                | `startowa.edu.pl` | `/godziny-lekcji`                                |
 | `https://startowa.edu.pl/2025/02/22/podziekowania-dla-marty-markiewicz/` | `startowa.edu.pl` | `/2025/02/22/podziekowania-dla-marty-markiewicz` |
 
 Na stronie internetowej, dla każdej ścieżki można zdefiniować stronę, która ma
@@ -54,7 +54,7 @@ import { type RouteConfig, index, route } from "@react-router/dev/routes";
 
 export default [
   index("routes/home.tsx"),
-  route("secondary", "routes/secondary.tsx")
+  route("secondary", "routes/secondary.tsx"),
 ] satisfies RouteConfig;
 ```
 
@@ -100,7 +100,7 @@ pomocy słowa kluczowego `export`:
 ```ts
 // Plik: app/routes/isEven.ts
 export function isEven(num: number) {
-  return num % 2 == 0
+  return num % 2 == 0;
 }
 ```
 
@@ -108,10 +108,10 @@ Możemy z niej wtedy skorzystać w innym pliku importując ją:
 
 ```ts
 // Plik: app/routes/isOdd.ts
-import { isEven } from './isEven.ts'
+import { isEven } from "./isEven.ts";
 
 function isOdd(num: number) {
-  return !isEven(num)
+  return !isEven(num);
 }
 ```
 
@@ -121,7 +121,7 @@ utworzyć tylko jeden eksport domyślny:
 ```ts
 // Plik: app/routes/isEven2.ts
 export default function isEven(num: number) {
-  return num % 2 == 0
+  return num % 2 == 0;
 }
 ```
 
@@ -130,10 +130,10 @@ programista sam nadaje jej nazwę korzystając z niej w ten sposób:
 
 ```ts
 // Plik: app/routes/isOdd2.ts
-import isEvenFromOtherFile from './isEven2.ts'
+import isEvenFromOtherFile from "./isEven2.ts";
 
 function isOdd(num: number) {
-  return !isEvenFromOtherFile(num)
+  return !isEvenFromOtherFile(num);
 }
 ```
 
@@ -144,6 +144,67 @@ działała poprawnie, musimy w pliku implementującym ścieżkę umieścić wła
 taki eksport domyślny - to on będzie wyświetlony jako główny widok na stronie.
 
 ## Nawigacja do innej strony
+
+Istnieje wiele różnych mechanizmów nawigacji na inną stronę:
+
+1. Przy pomocy specjalnych znaczników do nawigacji:
+
+```ts
+function Home() {
+  function handleButtonClick() {
+    return redirect("/secondary")
+  }
+
+  return <div>
+    <NavLink to="/secondary">Link do podstrony</NavLink>
+    <NavLink to="https://google.com">Link do google</NavLink>
+  </div>
+}
+```
+
+2. Przy pomocy hooka `useNavigate()`:
+
+```ts
+function Home() {
+  let navigate = useNavigate()
+
+  function handleButtonClick() {
+    navigate("/secondary")
+  }
+
+  return <button onClick={handleButtonClick}>Przejdź na podstronę</button>
+}
+```
+
+3. Przy pomocy funkcji `redirect()`:
+
+```ts
+function Home() {
+  function handleButtonClick() {
+    return redirect("/secondary")
+  }
+
+  return <button onClick={handleButtonClick}>Przejdź na podstronę</button>
+}
+```
+
+4. Przy pomocy znacznika HTML:
+
+```ts
+function Home() {
+  function handleButtonClick() {
+    return redirect("/secondary")
+  }
+
+  return <div>
+    <a href="/secondary">Link do podstrony</a>
+    <a href="https://google.com">Link do google</a>
+  </div>
+}
+```
+
+Więcej o pierwszych trzech mechanizmach (polecanych) można przeczytać w
+[dokumentacji](https://reactrouter.com/start/framework/navigating).
 
 ## Parametry
 
