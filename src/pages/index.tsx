@@ -29,7 +29,7 @@ function HomepageContent() {
           Cześć!
         </Heading>
 
-        <HomepageButton title='Start' href='/matura/docs/category/wstęp'/>
+        <HomepageButton title='Start' href='/docs/category/wstęp'/>
       </div>
       
       <br/>
@@ -66,7 +66,7 @@ function HomepageContent() {
       </p>
 
       <img
-        src="/matura/img/karol-wasowski.jpg"
+        src="/img/karol-wasowski.jpg"
         alt="Karol Wąsowski"
         className={clsx(styles.landingProfileImage)} />
       
