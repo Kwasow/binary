@@ -12,8 +12,8 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://kwasow.github.io',
-  baseUrl: '/matura',
+  url: 'https://startowa.kwasow.pl',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'Kwasow',
