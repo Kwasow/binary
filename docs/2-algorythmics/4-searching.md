@@ -5,7 +5,7 @@ title: "Wyszukiwanie elementu listy"
 
 :::info
 
-Struktury algorytmiczne wymagane w tym rozdziale: [lista](./strucutres#Lista).
+Struktury algorytmiczne wymagane w tym rozdziale: [lista](./strucutres#lista).
 
 :::
 
