@@ -58,15 +58,15 @@ tę zbitkę jako jeden znak, a następnie dodajmy mapę tego nowego znaku w zbit
 Zróbmy to na przykład tak:
 
 ```
-1kot#1,1a,1u,1a,1em,kocie,kocie
+1kot,2kocie#1,1a,1u,1a,1em,2,2
 ```
 
 Teraz do zapisania wiadomości zużyliśmy tylko 217 bitów, czyli o 14% mniej.
 Powyższa wiadomość składa się z trzech części:
 
-- `1kot` - mapa w ustalonym formacie, która mówi nam, jak podmienić znaki w tekście
+- `1kot,2kocie` - mapa w ustalonym formacie, która mówi nam, jak podmienić znaki w tekście
 - `#` - znak rozdzielający mapę od zakodowanej wiadomości
-- `1,1a,1u,1a,1em,kocie,kocie` - zakodowana wiadomość
+- `1,1a,1u,1a,1em,2,2` - zakodowana wiadomość
 
 Dla tak krótkiego tekstu, taka kompresja nie jest szczególnie efektywna, ale
 jeśli mamy do czynienia z bardzo dużym plikiem i przy budowaniu skorzystamy z
@@ -75,6 +75,6 @@ podmieniać, to efekty będą dużo lepsze.
 
 ## Zastosowanie kompresji w praktyce
 
-**Kompresja bezstratna**: JPEG, mp3, mp4, róźne protokoły Bluetooth
+**Kompresja stratna**: JPEG, mp3, mp4, róźne protokoły Bluetooth
 
-**Kompresja stratna**: PNG, zip, FLAC (audio)
+**Kompresja bezstratna**: PNG, zip, FLAC (audio)
