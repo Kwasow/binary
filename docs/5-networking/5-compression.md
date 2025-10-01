@@ -75,6 +75,6 @@ podmieniać, to efekty będą dużo lepsze.
 
 ## Zastosowanie kompresji w praktyce
 
-**Kompresja bezstratna**: JPEG, mp3, mp4, róźne protokoły Bluetooth
+**Kompresja stratna**: JPEG, mp3, mp4, róźne protokoły Bluetooth
 
-**Kompresja stratna**: PNG, zip, FLAC (audio)
+**Kompresja bezstratna**: PNG, zip, FLAC (audio)
