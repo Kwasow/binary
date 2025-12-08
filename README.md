@@ -1,5 +1,7 @@
 # Binary
 
+Repository migrated to [Codeberg](https://codeberg.org/kwasow/binary)
+
 A website where I put all my teaching material. It helps making them easily
 accessible for my students as well as anyone else who want's to learn Computer
 Science.
